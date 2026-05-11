@@ -1,6 +1,7 @@
 data/*
 !data/.gitkeep
-models/*.json
+models/*
+!models/.gitkeep
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
