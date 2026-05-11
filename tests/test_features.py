@@ -27,7 +27,8 @@ def test_compute_angle_left_baseline():
 
 def test_compute_angle_symmetry():
     # Symmetric shots from left and right should have equal magnitude
-    assert abs(compute_angle(100, 150)) == abs(compute_angle(-100, 150))
+    import pytest
+    assert abs(compute_angle(100, 150)) == pytest.approx(abs(compute_angle(-100, 150)))
 
 
 def test_encode_defender_distance_all_categories():

@@ -24,6 +24,7 @@ def compute_angle(loc_x: float, loc_y: float) -> float:
     nba_api coordinates: loc_x = horizontal (tenths of feet, negative=left),
     loc_y = forward distance from basket (tenths of feet).
     Returns negative for left side, positive for right side.
+    At-basket shots (loc_x=0, loc_y=0) return 0.0 by atan2 convention.
     """
     return math.degrees(math.atan2(loc_x, loc_y))
 
@@ -38,7 +39,7 @@ def compute_seconds_in_period(minutes_remaining: float, seconds_remaining: float
     return minutes_remaining * 60 + seconds_remaining
 
 
-def build_feature_matrix(df: pd.DataFrame):
+def build_feature_matrix(df: pd.DataFrame) -> tuple[pd.DataFrame, "pd.Series"]:
     """Return (X, y) from an enriched shots DataFrame.
 
     Expects df to already contain all FEATURE_COLS plus SHOT_MADE_FLAG.
