@@ -33,7 +33,7 @@ def plot_roc_auc(y_true, y_proba) -> plt.Figure:
 
 
 def plot_feature_importance(model) -> plt.Figure:
-    scores = model._model.feature_importances_
+    scores = model.feature_importances_
     fig, ax = plt.subplots(figsize=(7, 4))
     ax.barh(FEATURE_COLS, scores)
     ax.set_xlabel("Importance")
@@ -56,16 +56,13 @@ def plot_calibration_curve(y_true, y_proba, n_bins: int = 10) -> plt.Figure:
 
 def plot_team_comparison(shots_df: pd.DataFrame, model) -> plt.Figure:
     """Bar chart: actual FG% vs model-expected FG% per team."""
-    rows = []
-    for team, group in shots_df.groupby("TEAM_NAME"):
-        actual_fg = group["SHOT_MADE_FLAG"].mean()
-        expected_fg = np.mean([
-            model.predict_proba(dict(zip(FEATURE_COLS, row)))
-            for row in group[FEATURE_COLS].itertuples(index=False)
-        ])
-        rows.append({"team": team, "actual": actual_fg, "expected": expected_fg})
+    df = shots_df.copy()
+    df["_predicted"] = model._model.predict_proba(df[FEATURE_COLS].values)[:, 1]
+    result = df.groupby("TEAM_NAME").agg(
+        actual=("SHOT_MADE_FLAG", "mean"),
+        expected=("_predicted", "mean"),
+    )
 
-    result = pd.DataFrame(rows).set_index("team")
     fig, ax = plt.subplots(figsize=(max(8, len(result)), 5))
     x = np.arange(len(result))
     width = 0.35

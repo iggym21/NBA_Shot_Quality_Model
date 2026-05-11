@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 from xgboost import XGBClassifier
 from sklearn.metrics import roc_auc_score, accuracy_score
@@ -14,6 +15,10 @@ class ShotQualityModel:
             random_state=42,
             verbosity=0,
         )
+
+    @property
+    def feature_importances_(self) -> "np.ndarray":
+        return self._model.feature_importances_
 
     def train(self, X_train: pd.DataFrame, y_train) -> None:
         self._model.fit(X_train[FEATURE_COLS], y_train)
