@@ -57,7 +57,7 @@ def plot_calibration_curve(y_true, y_proba, n_bins: int = 10) -> plt.Figure:
 def plot_team_comparison(shots_df: pd.DataFrame, model) -> plt.Figure:
     """Bar chart: actual FG% vs model-expected FG% per team."""
     df = shots_df.copy()
-    df["_predicted"] = model._model.predict_proba(df[FEATURE_COLS].values)[:, 1]
+    df["_predicted"] = model.predict_proba_batch(df)
     result = df.groupby("TEAM_NAME").agg(
         actual=("SHOT_MADE_FLAG", "mean"),
         expected=("_predicted", "mean"),

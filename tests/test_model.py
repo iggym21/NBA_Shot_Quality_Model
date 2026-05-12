@@ -63,3 +63,12 @@ def test_roc_auc_above_baseline_on_synthetic(trained_model):
     metrics = model.evaluate(X, y)
     # Synthetic data with signal should exceed 0.60
     assert metrics["roc_auc"] > 0.60
+
+
+def test_predict_proba_batch_returns_array(trained_model):
+    model, X, _ = trained_model
+    result = model.predict_proba_batch(X)
+    import numpy as np
+    assert isinstance(result, np.ndarray)
+    assert result.shape == (len(X),)
+    assert (result >= 0).all() and (result <= 1).all()

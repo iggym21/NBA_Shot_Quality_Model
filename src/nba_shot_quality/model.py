@@ -28,6 +28,10 @@ class ShotQualityModel:
         X = pd.DataFrame([features])[FEATURE_COLS]
         return float(self._model.predict_proba(X)[0, 1])
 
+    def predict_proba_batch(self, X: pd.DataFrame) -> "np.ndarray":
+        """Return make probabilities for a batch of shots as a 1-D array."""
+        return self._model.predict_proba(X[FEATURE_COLS])[:, 1]
+
     def evaluate(self, X_test: pd.DataFrame, y_test) -> dict:
         y_proba = self._model.predict_proba(X_test[FEATURE_COLS])[:, 1]
         y_pred = (y_proba >= 0.5).astype(int)
