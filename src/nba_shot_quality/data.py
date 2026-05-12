@@ -86,18 +86,29 @@ def _fetch_defender_distances(season: str) -> pd.DataFrame:
 
 
 def _fetch_score_differentials(game_ids: list) -> pd.DataFrame:
-    """Fetch score margin at each play event for a list of game IDs."""
+    """Fetch score margin at each play event for a list of game IDs.
+
+    Skips individual games that return malformed responses (e.g. rate-limit
+    errors or API schema changes) and defaults those shots to score_differential=0.
+    """
     dfs = []
-    for game_id in game_ids:
-        response = PlayByPlayV2(game_id=game_id)
-        df = response.get_data_frames()[0]
-        df["SCOREMARGIN_INT"] = (
-            pd.to_numeric(df["SCOREMARGIN"].replace("TIE", "0"), errors="coerce")
-            .fillna(0)
-            .astype(int)
-        )
-        dfs.append(df[["GAME_ID", "EVENTNUM", "SCOREMARGIN_INT"]])
+    for i, game_id in enumerate(game_ids):
+        try:
+            response = PlayByPlayV2(game_id=game_id)
+            df = response.get_data_frames()[0]
+            df["SCOREMARGIN_INT"] = (
+                pd.to_numeric(df["SCOREMARGIN"].replace("TIE", "0"), errors="coerce")
+                .fillna(0)
+                .astype(int)
+            )
+            dfs.append(df[["GAME_ID", "EVENTNUM", "SCOREMARGIN_INT"]])
+        except Exception as e:
+            print(f"  [warning] skipped game {game_id}: {e}")
         time.sleep(_SLEEP)
+        if (i + 1) % 100 == 0:
+            print(f"  play-by-play: {i + 1}/{len(game_ids)} games processed")
+    if not dfs:
+        return pd.DataFrame(columns=["GAME_ID", "EVENTNUM", "SCOREMARGIN_INT"])
     return pd.concat(dfs, ignore_index=True)
 
 
