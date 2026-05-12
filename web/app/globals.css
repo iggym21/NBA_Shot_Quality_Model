@@ -1,0 +1,38 @@
+:root {
+  --navy: #1a1a2e;
+  --navy-dark: #0f3460;
+  --navy-mid: #16213e;
+  --red: #e94560;
+  --text: #eeeeee;
+  --text-muted: #aaaaaa;
+  --green: #50c878;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--navy);
+  color: var(--text);
+  font-family: var(--inter), sans-serif;
+  min-height: 100vh;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--red);
+  cursor: pointer;
+}
+
+select {
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+}
