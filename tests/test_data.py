@@ -61,3 +61,17 @@ def test_add_engineered_features_angle_range():
     df = make_raw_shots_df()
     result = add_engineered_features(df)
     assert result["shot_angle"].between(-90, 90).all()
+
+
+def test_add_engineered_features_does_not_mutate_input():
+    df = make_raw_shots_df()
+    add_engineered_features(df)
+    assert "shot_angle" not in df.columns
+    assert "seconds_in_period" not in df.columns
+
+
+def test_load_or_fetch_returns_empty_dataframe_for_empty_seasons():
+    from nba_shot_quality.data import load_or_fetch
+    result = load_or_fetch(seasons=[], cache_dir="/tmp/nonexistent")
+    assert isinstance(result, pd.DataFrame)
+    assert len(result) == 0

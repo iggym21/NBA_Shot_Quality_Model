@@ -33,15 +33,15 @@ def _save_to_cache(df: pd.DataFrame, season: str, cache_dir: str) -> None:
 
 
 def add_engineered_features(df: pd.DataFrame) -> pd.DataFrame:
-    """Add shot_angle and seconds_in_period columns to a raw shots DataFrame."""
+    """Add shot_angle and seconds_in_period columns to a raw shots DataFrame.
+
+    Clips shot_angle to [-90, 90] to handle behind-basket shots (LOC_Y < 0),
+    which represent tip-ins and putbacks where angle is not meaningful.
+    """
+    import numpy as np
     df = df.copy()
-    df["shot_angle"] = df.apply(
-        lambda r: compute_angle(r["LOC_X"], r["LOC_Y"]), axis=1
-    )
-    df["seconds_in_period"] = df.apply(
-        lambda r: compute_seconds_in_period(r["MINUTES_REMAINING"], r["SECONDS_REMAINING"]),
-        axis=1,
-    )
+    df["shot_angle"] = np.degrees(np.arctan2(df["LOC_X"], df["LOC_Y"])).clip(-90, 90)
+    df["seconds_in_period"] = df["MINUTES_REMAINING"] * 60 + df["SECONDS_REMAINING"]
     return df
 
 
@@ -142,4 +142,6 @@ def load_or_fetch(seasons: list = None, cache_dir: str = "data") -> pd.DataFrame
         print(f"  saved to cache: {_cache_path(season, cache_dir)}")
         all_dfs.append(shots)
 
+    if not all_dfs:
+        return pd.DataFrame()
     return pd.concat(all_dfs, ignore_index=True)
