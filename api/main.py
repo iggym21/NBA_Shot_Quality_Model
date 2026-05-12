@@ -2,7 +2,7 @@ import os
 from contextlib import asynccontextmanager
 
 import pandas as pd
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from xgboost import XGBClassifier
@@ -59,7 +59,6 @@ def health() -> dict:
 @app.post("/predict", response_model=PredictResponse)
 def predict(features: ShotFeatures) -> PredictResponse:
     if model is None:
-        from fastapi import HTTPException
         raise HTTPException(status_code=503, detail="Model not loaded")
     X = pd.DataFrame([features.model_dump()])[FEATURE_COLS]
     prob = float(model.predict_proba(X)[0, 1])
