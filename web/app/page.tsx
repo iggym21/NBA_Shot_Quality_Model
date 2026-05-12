@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import TabNav from '@/components/TabNav'
+import ShotPredictor from '@/components/predictor/ShotPredictor'
 
 type Tab = 'predictor' | 'dashboard'
 
@@ -13,7 +14,7 @@ export default function Home() {
       <TabNav activeTab={activeTab} onTabChange={setActiveTab} />
       <div style={{ padding: '28px 24px', maxWidth: '960px', margin: '0 auto' }}>
         {activeTab === 'predictor' ? (
-          <p style={{ color: 'var(--text-muted)' }}>Predictor placeholder</p>
+          <ShotPredictor />
         ) : (
           <p style={{ color: 'var(--text-muted)' }}>Dashboard placeholder</p>
         )}
