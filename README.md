@@ -18,10 +18,11 @@ An XGBoost classifier that predicts NBA shot make probability (0–1) from six c
 ```bash
 git clone https://github.com/your-username/NBA_Shot_Quality_Model.git
 cd NBA_Shot_Quality_Model
-pip install -e .
-# or for development:
-pip install -e ".[dev]"
+pip install -e .        # installs all dependencies including jupyter, nba_api, xgboost
+pip install -e ".[dev]" # also installs pytest/pytest-cov for development
 ```
+
+> **Note:** `requirements.txt` contains only dev test tools. Use `pip install -e .` for the full installation.
 
 ## Notebook Run Order
 
@@ -55,6 +56,7 @@ prob = model.predict_proba({
 print(f"Make probability: {prob:.1%}")
 
 # Batch prediction (vectorized)
+# Note: run notebooks/01_data.ipynb first to fetch and cache shot data
 import pandas as pd
 shots_df = pd.read_parquet("data/shots_2023-24.parquet")
 probs = model.predict_proba_batch(shots_df)
