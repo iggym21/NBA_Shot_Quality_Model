@@ -4,17 +4,25 @@ interface ProbabilityOverlayProps {
 }
 
 export default function ProbabilityOverlay({ probability, isLoading }: ProbabilityOverlayProps) {
-  const label =
-    probability === null ? null
-    : probability >= 0.55 ? 'Likely Make'
-    : probability >= 0.45 ? 'Contested'
-    : 'Likely Miss'
+  const pct = probability !== null ? Math.round(probability * 100) : null
 
   const color =
     probability === null ? 'var(--text-muted)'
     : probability >= 0.55 ? 'var(--green)'
-    : probability >= 0.45 ? '#f4a261'
+    : probability >= 0.45 ? 'var(--gold)'
     : 'var(--red)'
+
+  const glowColor =
+    probability === null ? 'transparent'
+    : probability >= 0.55 ? 'rgba(0,230,118,0.2)'
+    : probability >= 0.45 ? 'rgba(255,214,10,0.2)'
+    : 'rgba(255,23,68,0.2)'
+
+  const label =
+    probability === null ? null
+    : probability >= 0.55 ? 'LIKELY MAKE'
+    : probability >= 0.45 ? 'CONTESTED'
+    : 'LIKELY MISS'
 
   return (
     <div
@@ -22,37 +30,59 @@ export default function ProbabilityOverlay({ probability, isLoading }: Probabili
         position: 'absolute',
         top: '12px',
         right: '12px',
-        textAlign: 'right',
         pointerEvents: 'none',
+        textAlign: 'right',
       }}
     >
       <div
         style={{
-          fontSize: '38px',
-          fontWeight: 700,
-          lineHeight: 1,
-          color,
-          textShadow: '0 2px 8px rgba(0,0,0,0.6)',
+          background: 'rgba(8, 8, 8, 0.88)',
+          border: `1px solid ${probability !== null ? color : 'var(--border-2)'}`,
+          borderRadius: '4px',
+          padding: '10px 16px 12px',
+          backdropFilter: 'blur(10px)',
+          boxShadow: probability !== null ? `0 0 28px ${glowColor}` : 'none',
+          minWidth: '110px',
         }}
       >
-        {isLoading ? '…' : probability !== null ? `${Math.round(probability * 100)}%` : '—'}
-      </div>
-      {label && !isLoading && (
         <div
           style={{
-            marginTop: '5px',
-            fontSize: '12px',
-            fontWeight: 600,
-            background: color,
-            color: '#fff',
-            borderRadius: '4px',
-            padding: '2px 8px',
-            display: 'inline-block',
+            fontFamily: 'var(--font-mono)',
+            fontSize: '9px',
+            letterSpacing: '0.16em',
+            color: 'var(--text-muted)',
+            textTransform: 'uppercase',
+            marginBottom: '1px',
           }}
         >
-          {label}
+          MAKE %
         </div>
-      )}
+        <div
+          style={{
+            fontFamily: 'var(--font-display)',
+            fontSize: '58px',
+            lineHeight: 1,
+            color,
+            letterSpacing: '0.02em',
+          }}
+        >
+          {isLoading ? '···' : pct !== null ? `${pct}%` : '—'}
+        </div>
+        {label && !isLoading && (
+          <div
+            style={{
+              fontFamily: 'var(--font-mono)',
+              fontSize: '9px',
+              letterSpacing: '0.12em',
+              color,
+              marginTop: '3px',
+              textTransform: 'uppercase',
+            }}
+          >
+            {label}
+          </div>
+        )}
+      </div>
     </div>
   )
 }

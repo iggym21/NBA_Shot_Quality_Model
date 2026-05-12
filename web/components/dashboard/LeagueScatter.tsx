@@ -70,28 +70,39 @@ export default function LeagueScatter({ teams }: LeagueScatterProps) {
   const lo = Math.floor(Math.min(...allVals)) - 0.5
   const hi = Math.ceil(Math.max(...allVals)) + 0.5
 
-  const CustomDot = (props: any) => {
-    const { cx, cy, payload } = props
+  const CustomDot = (props: Record<string, unknown>) => {
+    const cx = props.cx as number
+    const cy = props.cy as number
+    const payload = props.payload as Point
     const isHL = payload.name === highlighted
+    const delta = payload.y - payload.x
+    const dotColor = isHL ? '#FF1744' : delta >= 0 ? '#00E676' : '#FF5252'
+
     return (
       <g
         style={{ cursor: 'pointer' }}
         onClick={() => setHighlighted(isHL ? null : payload.name)}
       >
+        {isHL && <circle cx={cx} cy={cy} r={16} fill="rgba(255,23,68,0.15)" />}
         <circle
           cx={cx}
           cy={cy}
-          r={isHL ? 8 : 5}
-          fill={isHL ? 'var(--red)' : '#4a90d9'}
-          style={{ filter: isHL ? 'drop-shadow(0 0 5px var(--red))' : 'none' }}
+          r={isHL ? 7 : 5}
+          fill={dotColor}
+          style={{
+            filter: isHL ? 'drop-shadow(0 0 6px #FF1744)' : 'none',
+            transition: 'r 0.15s ease',
+          }}
         />
         {isHL && (
           <text
-            x={cx + 10}
+            x={cx + 11}
             y={cy + 4}
-            fill="var(--text)"
+            fill="#FFFFFF"
             fontSize={11}
-            fontWeight={600}
+            fontWeight={700}
+            fontFamily="var(--font-mono)"
+            letterSpacing="0.06em"
           >
             {ABBREV[payload.name] ?? payload.name}
           </text>
@@ -100,37 +111,31 @@ export default function LeagueScatter({ teams }: LeagueScatterProps) {
     )
   }
 
-  const CustomTooltip = ({ active, payload }: any) => {
+  const CustomTooltip = ({ active, payload }: { active?: boolean; payload?: { payload: Point }[] }) => {
     if (!active || !payload?.length) return null
-    const p = payload[0].payload as Point
+    const p = payload[0].payload
     const delta = p.y - p.x
+    const color = delta >= 0 ? '#00E676' : '#FF1744'
     return (
-      <div
-        style={{
-          background: 'var(--navy-dark)',
-          border: '1px solid rgba(255,255,255,0.2)',
-          borderRadius: '6px',
-          padding: '10px 14px',
-          fontSize: '13px',
-          pointerEvents: 'none',
-        }}
-      >
-        <div style={{ fontWeight: 700, marginBottom: '4px' }}>{p.name}</div>
-        <div style={{ color: 'var(--text-muted)' }}>
-          Expected: {p.x.toFixed(1)}%
+      <div style={{
+        background: 'rgba(13,13,13,0.95)',
+        border: `1px solid ${color}`,
+        borderRadius: '4px',
+        padding: '10px 14px',
+        pointerEvents: 'none',
+        boxShadow: `0 0 20px rgba(${delta >= 0 ? '0,230,118' : '255,23,68'}, 0.2)`,
+      }}>
+        <div style={{ fontFamily: 'var(--font-body)', fontSize: '14px', fontWeight: 700, marginBottom: '6px' }}>
+          {p.name}
         </div>
-        <div style={{ color: 'var(--text-muted)' }}>
-          Actual: {p.y.toFixed(1)}%
+        <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#8A9BB0', marginBottom: '2px' }}>
+          EXP  {p.x.toFixed(1)}%
         </div>
-        <div
-          style={{
-            color: delta >= 0 ? 'var(--green)' : 'var(--red)',
-            fontWeight: 600,
-            marginTop: '4px',
-          }}
-        >
-          {delta >= 0 ? '+' : ''}
-          {delta.toFixed(1)}%
+        <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: '#8A9BB0', marginBottom: '4px' }}>
+          ACT  {p.y.toFixed(1)}%
+        </div>
+        <div style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color, fontWeight: 600 }}>
+          {delta >= 0 ? '+' : ''}{delta.toFixed(1)}%
         </div>
       </div>
     )
@@ -138,60 +143,54 @@ export default function LeagueScatter({ teams }: LeagueScatterProps) {
 
   return (
     <div>
-      <p
-        style={{
-          color: 'var(--text-muted)',
-          fontSize: '13px',
-          marginBottom: '16px',
-        }}
-      >
-        Teams above the diagonal outperform the model. Click a dot to label it.
+      <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'var(--text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '20px' }}>
+        Teams above the diagonal outperform model expectations · Click a dot to label it
       </p>
-      <ResponsiveContainer width="100%" height={420}>
-        <ScatterChart margin={{ top: 20, right: 30, bottom: 50, left: 20 }}>
-          <CartesianGrid
-            strokeDasharray="3 3"
-            stroke="rgba(255,255,255,0.08)"
-          />
+      <ResponsiveContainer width="100%" height={440}>
+        <ScatterChart margin={{ top: 20, right: 40, bottom: 56, left: 20 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
           <XAxis
             type="number"
             dataKey="x"
             domain={[lo, hi]}
-            tick={{ fill: 'var(--text-muted)', fontSize: 12 }}
-            tickLine={{ stroke: 'var(--text-muted)' }}
-            axisLine={{ stroke: 'rgba(255,255,255,0.2)' }}
+            tick={{ fill: '#3E4C5E', fontSize: 11, fontFamily: 'var(--font-mono)' }}
+            tickLine={false}
+            axisLine={{ stroke: 'rgba(255,255,255,0.08)' }}
           >
             <Label
               value="Expected FG% →"
               position="insideBottom"
-              offset={-10}
-              fill="var(--text-muted)"
-              fontSize={12}
+              offset={-16}
+              fill="#3E4C5E"
+              fontSize={10}
+              fontFamily="var(--font-mono)"
+              letterSpacing="0.1em"
+              style={{ textTransform: 'uppercase' }}
             />
           </XAxis>
           <YAxis
             type="number"
             dataKey="y"
             domain={[lo, hi]}
-            tick={{ fill: 'var(--text-muted)', fontSize: 12 }}
-            tickLine={{ stroke: 'var(--text-muted)' }}
-            axisLine={{ stroke: 'rgba(255,255,255,0.2)' }}
+            tick={{ fill: '#3E4C5E', fontSize: 11, fontFamily: 'var(--font-mono)' }}
+            tickLine={false}
+            axisLine={{ stroke: 'rgba(255,255,255,0.08)' }}
           >
             <Label
               value="Actual FG% →"
               angle={-90}
               position="insideLeft"
-              fill="var(--text-muted)"
-              fontSize={12}
+              fill="#3E4C5E"
+              fontSize={10}
+              fontFamily="var(--font-mono)"
+              letterSpacing="0.1em"
+              style={{ textTransform: 'uppercase' }}
             />
           </YAxis>
           <ReferenceLine
-            segment={[
-              { x: lo, y: lo },
-              { x: hi, y: hi },
-            ]}
-            stroke="rgba(255,255,255,0.2)"
-            strokeDasharray="4 4"
+            segment={[{ x: lo, y: lo }, { x: hi, y: hi }]}
+            stroke="rgba(255,255,255,0.12)"
+            strokeDasharray="5 5"
           />
           <Tooltip content={<CustomTooltip />} />
           <Scatter data={data} shape={<CustomDot />} />

@@ -1,306 +1,4365 @@
 {
-  "teams": [
-    {
-      "name": "Boston Celtics",
-      "overall": { "actual": 0.480, "expected": 0.462 },
-      "zones": {
-        "At Rim": { "actual": 0.682, "expected": 0.641, "fga": 2341 },
-        "Mid-Range": { "actual": 0.412, "expected": 0.438, "fga": 891 },
-        "Corner 3": { "actual": 0.391, "expected": 0.362, "fga": 1203 },
-        "Above Break 3": { "actual": 0.354, "expected": 0.361, "fga": 3102 }
+  "seasons": {
+    "2019-20": [
+      {
+        "name": "Boston Celtics",
+        "overall": {
+          "actual": 0.489,
+          "expected": 0.462
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.695,
+            "expected": 0.639,
+            "fga": 2114
+          },
+          "Mid-Range": {
+            "actual": 0.407,
+            "expected": 0.438,
+            "fga": 896
+          },
+          "Corner 3": {
+            "actual": 0.387,
+            "expected": 0.358,
+            "fga": 1367
+          },
+          "Above Break 3": {
+            "actual": 0.353,
+            "expected": 0.351,
+            "fga": 3492
+          }
+        }
+      },
+      {
+        "name": "Oklahoma City Thunder",
+        "overall": {
+          "actual": 0.489,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.685,
+            "expected": 0.642,
+            "fga": 2298
+          },
+          "Mid-Range": {
+            "actual": 0.394,
+            "expected": 0.434,
+            "fga": 668
+          },
+          "Corner 3": {
+            "actual": 0.382,
+            "expected": 0.367,
+            "fga": 995
+          },
+          "Above Break 3": {
+            "actual": 0.35,
+            "expected": 0.354,
+            "fga": 2695
+          }
+        }
+      },
+      {
+        "name": "Golden State Warriors",
+        "overall": {
+          "actual": 0.493,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.666,
+            "expected": 0.642,
+            "fga": 2416
+          },
+          "Mid-Range": {
+            "actual": 0.421,
+            "expected": 0.435,
+            "fga": 827
+          },
+          "Corner 3": {
+            "actual": 0.39,
+            "expected": 0.36,
+            "fga": 1189
+          },
+          "Above Break 3": {
+            "actual": 0.348,
+            "expected": 0.348,
+            "fga": 2884
+          }
+        }
+      },
+      {
+        "name": "Denver Nuggets",
+        "overall": {
+          "actual": 0.475,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.664,
+            "expected": 0.632,
+            "fga": 2564
+          },
+          "Mid-Range": {
+            "actual": 0.419,
+            "expected": 0.434,
+            "fga": 998
+          },
+          "Corner 3": {
+            "actual": 0.366,
+            "expected": 0.36,
+            "fga": 1095
+          },
+          "Above Break 3": {
+            "actual": 0.356,
+            "expected": 0.356,
+            "fga": 2775
+          }
+        }
+      },
+      {
+        "name": "Indiana Pacers",
+        "overall": {
+          "actual": 0.493,
+          "expected": 0.464
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.65,
+            "expected": 0.634,
+            "fga": 2352
+          },
+          "Mid-Range": {
+            "actual": 0.421,
+            "expected": 0.424,
+            "fga": 732
+          },
+          "Corner 3": {
+            "actual": 0.398,
+            "expected": 0.352,
+            "fga": 1230
+          },
+          "Above Break 3": {
+            "actual": 0.341,
+            "expected": 0.356,
+            "fga": 3046
+          }
+        }
+      },
+      {
+        "name": "Cleveland Cavaliers",
+        "overall": {
+          "actual": 0.47,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.675,
+            "expected": 0.636,
+            "fga": 2225
+          },
+          "Mid-Range": {
+            "actual": 0.422,
+            "expected": 0.431,
+            "fga": 998
+          },
+          "Corner 3": {
+            "actual": 0.374,
+            "expected": 0.357,
+            "fga": 1183
+          },
+          "Above Break 3": {
+            "actual": 0.346,
+            "expected": 0.359,
+            "fga": 3068
+          }
+        }
+      },
+      {
+        "name": "Milwaukee Bucks",
+        "overall": {
+          "actual": 0.483,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.699,
+            "expected": 0.647,
+            "fga": 2224
+          },
+          "Mid-Range": {
+            "actual": 0.418,
+            "expected": 0.436,
+            "fga": 939
+          },
+          "Corner 3": {
+            "actual": 0.364,
+            "expected": 0.358,
+            "fga": 1221
+          },
+          "Above Break 3": {
+            "actual": 0.348,
+            "expected": 0.352,
+            "fga": 2379
+          }
+        }
+      },
+      {
+        "name": "Miami Heat",
+        "overall": {
+          "actual": 0.469,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.638,
+            "expected": 0.626,
+            "fga": 1773
+          },
+          "Mid-Range": {
+            "actual": 0.425,
+            "expected": 0.428,
+            "fga": 698
+          },
+          "Corner 3": {
+            "actual": 0.375,
+            "expected": 0.354,
+            "fga": 1220
+          },
+          "Above Break 3": {
+            "actual": 0.342,
+            "expected": 0.358,
+            "fga": 2462
+          }
+        }
+      },
+      {
+        "name": "Sacramento Kings",
+        "overall": {
+          "actual": 0.469,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.654,
+            "expected": 0.63,
+            "fga": 1922
+          },
+          "Mid-Range": {
+            "actual": 0.432,
+            "expected": 0.432,
+            "fga": 810
+          },
+          "Corner 3": {
+            "actual": 0.362,
+            "expected": 0.353,
+            "fga": 1182
+          },
+          "Above Break 3": {
+            "actual": 0.357,
+            "expected": 0.36,
+            "fga": 3303
+          }
+        }
+      },
+      {
+        "name": "Minnesota Timberwolves",
+        "overall": {
+          "actual": 0.446,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.655,
+            "expected": 0.632,
+            "fga": 2277
+          },
+          "Mid-Range": {
+            "actual": 0.403,
+            "expected": 0.427,
+            "fga": 813
+          },
+          "Corner 3": {
+            "actual": 0.359,
+            "expected": 0.362,
+            "fga": 1014
+          },
+          "Above Break 3": {
+            "actual": 0.343,
+            "expected": 0.356,
+            "fga": 2576
+          }
+        }
+      },
+      {
+        "name": "New York Knicks",
+        "overall": {
+          "actual": 0.452,
+          "expected": 0.465
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.651,
+            "expected": 0.63,
+            "fga": 2032
+          },
+          "Mid-Range": {
+            "actual": 0.423,
+            "expected": 0.443,
+            "fga": 845
+          },
+          "Corner 3": {
+            "actual": 0.357,
+            "expected": 0.352,
+            "fga": 872
+          },
+          "Above Break 3": {
+            "actual": 0.354,
+            "expected": 0.358,
+            "fga": 2604
+          }
+        }
+      },
+      {
+        "name": "Dallas Mavericks",
+        "overall": {
+          "actual": 0.46,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.665,
+            "expected": 0.639,
+            "fga": 1949
+          },
+          "Mid-Range": {
+            "actual": 0.427,
+            "expected": 0.442,
+            "fga": 865
+          },
+          "Corner 3": {
+            "actual": 0.357,
+            "expected": 0.355,
+            "fga": 1267
+          },
+          "Above Break 3": {
+            "actual": 0.349,
+            "expected": 0.342,
+            "fga": 3057
+          }
+        }
+      },
+      {
+        "name": "New Orleans Pelicans",
+        "overall": {
+          "actual": 0.462,
+          "expected": 0.453
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.658,
+            "expected": 0.629,
+            "fga": 1784
+          },
+          "Mid-Range": {
+            "actual": 0.407,
+            "expected": 0.421,
+            "fga": 737
+          },
+          "Corner 3": {
+            "actual": 0.352,
+            "expected": 0.352,
+            "fga": 1116
+          },
+          "Above Break 3": {
+            "actual": 0.369,
+            "expected": 0.359,
+            "fga": 2688
+          }
+        }
+      },
+      {
+        "name": "Los Angeles Lakers",
+        "overall": {
+          "actual": 0.462,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.644,
+            "expected": 0.633,
+            "fga": 2077
+          },
+          "Mid-Range": {
+            "actual": 0.422,
+            "expected": 0.437,
+            "fga": 940
+          },
+          "Corner 3": {
+            "actual": 0.366,
+            "expected": 0.355,
+            "fga": 1004
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.362,
+            "fga": 2420
+          }
+        }
+      },
+      {
+        "name": "Memphis Grizzlies",
+        "overall": {
+          "actual": 0.443,
+          "expected": 0.447
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.649,
+            "expected": 0.632,
+            "fga": 1714
+          },
+          "Mid-Range": {
+            "actual": 0.423,
+            "expected": 0.422,
+            "fga": 600
+          },
+          "Corner 3": {
+            "actual": 0.349,
+            "expected": 0.35,
+            "fga": 927
+          },
+          "Above Break 3": {
+            "actual": 0.351,
+            "expected": 0.347,
+            "fga": 2547
+          }
+        }
+      },
+      {
+        "name": "LA Clippers",
+        "overall": {
+          "actual": 0.456,
+          "expected": 0.451
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.648,
+            "expected": 0.642,
+            "fga": 2351
+          },
+          "Mid-Range": {
+            "actual": 0.415,
+            "expected": 0.435,
+            "fga": 890
+          },
+          "Corner 3": {
+            "actual": 0.353,
+            "expected": 0.359,
+            "fga": 963
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.356,
+            "fga": 2419
+          }
+        }
+      },
+      {
+        "name": "Philadelphia 76ers",
+        "overall": {
+          "actual": 0.482,
+          "expected": 0.468
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.646,
+            "expected": 0.633,
+            "fga": 2293
+          },
+          "Mid-Range": {
+            "actual": 0.411,
+            "expected": 0.438,
+            "fga": 769
+          },
+          "Corner 3": {
+            "actual": 0.351,
+            "expected": 0.355,
+            "fga": 1119
+          },
+          "Above Break 3": {
+            "actual": 0.346,
+            "expected": 0.355,
+            "fga": 2759
+          }
+        }
+      },
+      {
+        "name": "Phoenix Suns",
+        "overall": {
+          "actual": 0.447,
+          "expected": 0.453
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.647,
+            "expected": 0.635,
+            "fga": 1786
+          },
+          "Mid-Range": {
+            "actual": 0.419,
+            "expected": 0.426,
+            "fga": 913
+          },
+          "Corner 3": {
+            "actual": 0.369,
+            "expected": 0.363,
+            "fga": 1206
+          },
+          "Above Break 3": {
+            "actual": 0.341,
+            "expected": 0.349,
+            "fga": 3062
+          }
+        }
+      },
+      {
+        "name": "Toronto Raptors",
+        "overall": {
+          "actual": 0.446,
+          "expected": 0.452
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.641,
+            "expected": 0.621,
+            "fga": 2055
+          },
+          "Mid-Range": {
+            "actual": 0.403,
+            "expected": 0.423,
+            "fga": 654
+          },
+          "Corner 3": {
+            "actual": 0.352,
+            "expected": 0.353,
+            "fga": 881
+          },
+          "Above Break 3": {
+            "actual": 0.34,
+            "expected": 0.354,
+            "fga": 2331
+          }
+        }
+      },
+      {
+        "name": "Orlando Magic",
+        "overall": {
+          "actual": 0.447,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.643,
+            "expected": 0.629,
+            "fga": 1872
+          },
+          "Mid-Range": {
+            "actual": 0.386,
+            "expected": 0.422,
+            "fga": 801
+          },
+          "Corner 3": {
+            "actual": 0.359,
+            "expected": 0.355,
+            "fga": 999
+          },
+          "Above Break 3": {
+            "actual": 0.321,
+            "expected": 0.357,
+            "fga": 2599
+          }
+        }
+      },
+      {
+        "name": "Atlanta Hawks",
+        "overall": {
+          "actual": 0.45,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.655,
+            "expected": 0.639,
+            "fga": 2040
+          },
+          "Mid-Range": {
+            "actual": 0.404,
+            "expected": 0.436,
+            "fga": 855
+          },
+          "Corner 3": {
+            "actual": 0.354,
+            "expected": 0.353,
+            "fga": 1011
+          },
+          "Above Break 3": {
+            "actual": 0.342,
+            "expected": 0.358,
+            "fga": 3303
+          }
+        }
+      },
+      {
+        "name": "Houston Rockets",
+        "overall": {
+          "actual": 0.457,
+          "expected": 0.462
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.628,
+            "expected": 0.629,
+            "fga": 2217
+          },
+          "Mid-Range": {
+            "actual": 0.394,
+            "expected": 0.422,
+            "fga": 653
+          },
+          "Corner 3": {
+            "actual": 0.359,
+            "expected": 0.347,
+            "fga": 1141
+          },
+          "Above Break 3": {
+            "actual": 0.325,
+            "expected": 0.366,
+            "fga": 2996
+          }
+        }
+      },
+      {
+        "name": "Utah Jazz",
+        "overall": {
+          "actual": 0.47,
+          "expected": 0.458
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.626,
+            "expected": 0.629,
+            "fga": 1730
+          },
+          "Mid-Range": {
+            "actual": 0.394,
+            "expected": 0.421,
+            "fga": 806
+          },
+          "Corner 3": {
+            "actual": 0.357,
+            "expected": 0.345,
+            "fga": 1062
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.356,
+            "fga": 2226
+          }
+        }
+      },
+      {
+        "name": "Portland Trail Blazers",
+        "overall": {
+          "actual": 0.441,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.642,
+            "expected": 0.623,
+            "fga": 2003
+          },
+          "Mid-Range": {
+            "actual": 0.423,
+            "expected": 0.426,
+            "fga": 679
+          },
+          "Corner 3": {
+            "actual": 0.341,
+            "expected": 0.36,
+            "fga": 891
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.353,
+            "fga": 2659
+          }
+        }
+      },
+      {
+        "name": "Brooklyn Nets",
+        "overall": {
+          "actual": 0.431,
+          "expected": 0.447
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.62,
+            "expected": 0.627,
+            "fga": 1687
+          },
+          "Mid-Range": {
+            "actual": 0.394,
+            "expected": 0.427,
+            "fga": 612
+          },
+          "Corner 3": {
+            "actual": 0.329,
+            "expected": 0.35,
+            "fga": 1020
+          },
+          "Above Break 3": {
+            "actual": 0.334,
+            "expected": 0.351,
+            "fga": 2617
+          }
+        }
+      },
+      {
+        "name": "Chicago Bulls",
+        "overall": {
+          "actual": 0.447,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.623,
+            "expected": 0.624,
+            "fga": 2077
+          },
+          "Mid-Range": {
+            "actual": 0.417,
+            "expected": 0.427,
+            "fga": 887
+          },
+          "Corner 3": {
+            "actual": 0.368,
+            "expected": 0.358,
+            "fga": 1140
+          },
+          "Above Break 3": {
+            "actual": 0.339,
+            "expected": 0.349,
+            "fga": 2734
+          }
+        }
+      },
+      {
+        "name": "San Antonio Spurs",
+        "overall": {
+          "actual": 0.454,
+          "expected": 0.45
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.632,
+            "expected": 0.624,
+            "fga": 2097
+          },
+          "Mid-Range": {
+            "actual": 0.407,
+            "expected": 0.426,
+            "fga": 689
+          },
+          "Corner 3": {
+            "actual": 0.357,
+            "expected": 0.354,
+            "fga": 1049
+          },
+          "Above Break 3": {
+            "actual": 0.33,
+            "expected": 0.348,
+            "fga": 2751
+          }
+        }
+      },
+      {
+        "name": "Washington Wizards",
+        "overall": {
+          "actual": 0.433,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.617,
+            "expected": 0.619,
+            "fga": 1960
+          },
+          "Mid-Range": {
+            "actual": 0.395,
+            "expected": 0.428,
+            "fga": 619
+          },
+          "Corner 3": {
+            "actual": 0.34,
+            "expected": 0.349,
+            "fga": 827
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.352,
+            "fga": 2201
+          }
+        }
+      },
+      {
+        "name": "Charlotte Hornets",
+        "overall": {
+          "actual": 0.438,
+          "expected": 0.463
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.635,
+            "expected": 0.62,
+            "fga": 1715
+          },
+          "Mid-Range": {
+            "actual": 0.413,
+            "expected": 0.43,
+            "fga": 624
+          },
+          "Corner 3": {
+            "actual": 0.358,
+            "expected": 0.348,
+            "fga": 969
+          },
+          "Above Break 3": {
+            "actual": 0.33,
+            "expected": 0.365,
+            "fga": 2828
+          }
+        }
+      },
+      {
+        "name": "Detroit Pistons",
+        "overall": {
+          "actual": 0.42,
+          "expected": 0.45
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.627,
+            "expected": 0.618,
+            "fga": 1795
+          },
+          "Mid-Range": {
+            "actual": 0.381,
+            "expected": 0.409,
+            "fga": 714
+          },
+          "Corner 3": {
+            "actual": 0.345,
+            "expected": 0.347,
+            "fga": 968
+          },
+          "Above Break 3": {
+            "actual": 0.332,
+            "expected": 0.352,
+            "fga": 2414
+          }
+        }
       }
-    },
-    {
-      "name": "Oklahoma City Thunder",
-      "overall": { "actual": 0.473, "expected": 0.457 },
-      "zones": {
-        "At Rim": { "actual": 0.675, "expected": 0.638, "fga": 2198 },
-        "Mid-Range": { "actual": 0.405, "expected": 0.431, "fga": 743 },
-        "Corner 3": { "actual": 0.383, "expected": 0.359, "fga": 1124 },
-        "Above Break 3": { "actual": 0.351, "expected": 0.358, "fga": 2987 }
+    ],
+    "2020-21": [
+      {
+        "name": "Boston Celtics",
+        "overall": {
+          "actual": 0.493,
+          "expected": 0.47
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.675,
+            "expected": 0.642,
+            "fga": 2338
+          },
+          "Mid-Range": {
+            "actual": 0.393,
+            "expected": 0.438,
+            "fga": 794
+          },
+          "Corner 3": {
+            "actual": 0.384,
+            "expected": 0.359,
+            "fga": 1114
+          },
+          "Above Break 3": {
+            "actual": 0.359,
+            "expected": 0.366,
+            "fga": 3118
+          }
+        }
+      },
+      {
+        "name": "Oklahoma City Thunder",
+        "overall": {
+          "actual": 0.474,
+          "expected": 0.463
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.664,
+            "expected": 0.638,
+            "fga": 1904
+          },
+          "Mid-Range": {
+            "actual": 0.398,
+            "expected": 0.434,
+            "fga": 804
+          },
+          "Corner 3": {
+            "actual": 0.389,
+            "expected": 0.352,
+            "fga": 1054
+          },
+          "Above Break 3": {
+            "actual": 0.335,
+            "expected": 0.354,
+            "fga": 2876
+          }
+        }
+      },
+      {
+        "name": "Golden State Warriors",
+        "overall": {
+          "actual": 0.476,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.669,
+            "expected": 0.634,
+            "fga": 1840
+          },
+          "Mid-Range": {
+            "actual": 0.423,
+            "expected": 0.434,
+            "fga": 928
+          },
+          "Corner 3": {
+            "actual": 0.372,
+            "expected": 0.359,
+            "fga": 1370
+          },
+          "Above Break 3": {
+            "actual": 0.354,
+            "expected": 0.355,
+            "fga": 2978
+          }
+        }
+      },
+      {
+        "name": "Denver Nuggets",
+        "overall": {
+          "actual": 0.471,
+          "expected": 0.458
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.659,
+            "expected": 0.639,
+            "fga": 2184
+          },
+          "Mid-Range": {
+            "actual": 0.431,
+            "expected": 0.446,
+            "fga": 1048
+          },
+          "Corner 3": {
+            "actual": 0.357,
+            "expected": 0.356,
+            "fga": 1034
+          },
+          "Above Break 3": {
+            "actual": 0.364,
+            "expected": 0.346,
+            "fga": 3122
+          }
+        }
+      },
+      {
+        "name": "Indiana Pacers",
+        "overall": {
+          "actual": 0.467,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.641,
+            "expected": 0.624,
+            "fga": 2086
+          },
+          "Mid-Range": {
+            "actual": 0.415,
+            "expected": 0.424,
+            "fga": 717
+          },
+          "Corner 3": {
+            "actual": 0.351,
+            "expected": 0.353,
+            "fga": 1303
+          },
+          "Above Break 3": {
+            "actual": 0.338,
+            "expected": 0.358,
+            "fga": 2840
+          }
+        }
+      },
+      {
+        "name": "Cleveland Cavaliers",
+        "overall": {
+          "actual": 0.471,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.646,
+            "expected": 0.63,
+            "fga": 2261
+          },
+          "Mid-Range": {
+            "actual": 0.41,
+            "expected": 0.425,
+            "fga": 918
+          },
+          "Corner 3": {
+            "actual": 0.361,
+            "expected": 0.35,
+            "fga": 1067
+          },
+          "Above Break 3": {
+            "actual": 0.344,
+            "expected": 0.364,
+            "fga": 3247
+          }
+        }
+      },
+      {
+        "name": "Milwaukee Bucks",
+        "overall": {
+          "actual": 0.472,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.651,
+            "expected": 0.644,
+            "fga": 2160
+          },
+          "Mid-Range": {
+            "actual": 0.427,
+            "expected": 0.421,
+            "fga": 797
+          },
+          "Corner 3": {
+            "actual": 0.366,
+            "expected": 0.352,
+            "fga": 1021
+          },
+          "Above Break 3": {
+            "actual": 0.345,
+            "expected": 0.356,
+            "fga": 2393
+          }
+        }
+      },
+      {
+        "name": "Miami Heat",
+        "overall": {
+          "actual": 0.476,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.642,
+            "expected": 0.638,
+            "fga": 2155
+          },
+          "Mid-Range": {
+            "actual": 0.402,
+            "expected": 0.43,
+            "fga": 878
+          },
+          "Corner 3": {
+            "actual": 0.37,
+            "expected": 0.355,
+            "fga": 1299
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.351,
+            "fga": 2448
+          }
+        }
+      },
+      {
+        "name": "Sacramento Kings",
+        "overall": {
+          "actual": 0.448,
+          "expected": 0.451
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.648,
+            "expected": 0.636,
+            "fga": 2324
+          },
+          "Mid-Range": {
+            "actual": 0.43,
+            "expected": 0.433,
+            "fga": 937
+          },
+          "Corner 3": {
+            "actual": 0.37,
+            "expected": 0.346,
+            "fga": 959
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.361,
+            "fga": 2719
+          }
+        }
+      },
+      {
+        "name": "Minnesota Timberwolves",
+        "overall": {
+          "actual": 0.466,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.683,
+            "expected": 0.632,
+            "fga": 2116
+          },
+          "Mid-Range": {
+            "actual": 0.411,
+            "expected": 0.425,
+            "fga": 824
+          },
+          "Corner 3": {
+            "actual": 0.371,
+            "expected": 0.353,
+            "fga": 949
+          },
+          "Above Break 3": {
+            "actual": 0.357,
+            "expected": 0.359,
+            "fga": 2783
+          }
+        }
+      },
+      {
+        "name": "New York Knicks",
+        "overall": {
+          "actual": 0.466,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.654,
+            "expected": 0.637,
+            "fga": 2091
+          },
+          "Mid-Range": {
+            "actual": 0.429,
+            "expected": 0.441,
+            "fga": 797
+          },
+          "Corner 3": {
+            "actual": 0.375,
+            "expected": 0.345,
+            "fga": 1087
+          },
+          "Above Break 3": {
+            "actual": 0.352,
+            "expected": 0.355,
+            "fga": 2396
+          }
+        }
+      },
+      {
+        "name": "Dallas Mavericks",
+        "overall": {
+          "actual": 0.464,
+          "expected": 0.458
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.669,
+            "expected": 0.632,
+            "fga": 1835
+          },
+          "Mid-Range": {
+            "actual": 0.437,
+            "expected": 0.428,
+            "fga": 885
+          },
+          "Corner 3": {
+            "actual": 0.369,
+            "expected": 0.36,
+            "fga": 1012
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.367,
+            "fga": 3238
+          }
+        }
+      },
+      {
+        "name": "New Orleans Pelicans",
+        "overall": {
+          "actual": 0.458,
+          "expected": 0.453
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.632,
+            "expected": 0.635,
+            "fga": 2325
+          },
+          "Mid-Range": {
+            "actual": 0.412,
+            "expected": 0.424,
+            "fga": 649
+          },
+          "Corner 3": {
+            "actual": 0.347,
+            "expected": 0.359,
+            "fga": 1043
+          },
+          "Above Break 3": {
+            "actual": 0.357,
+            "expected": 0.353,
+            "fga": 3031
+          }
+        }
+      },
+      {
+        "name": "Los Angeles Lakers",
+        "overall": {
+          "actual": 0.463,
+          "expected": 0.453
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.674,
+            "expected": 0.633,
+            "fga": 1931
+          },
+          "Mid-Range": {
+            "actual": 0.415,
+            "expected": 0.43,
+            "fga": 712
+          },
+          "Corner 3": {
+            "actual": 0.366,
+            "expected": 0.351,
+            "fga": 1159
+          },
+          "Above Break 3": {
+            "actual": 0.34,
+            "expected": 0.354,
+            "fga": 2168
+          }
+        }
+      },
+      {
+        "name": "Memphis Grizzlies",
+        "overall": {
+          "actual": 0.45,
+          "expected": 0.445
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.636,
+            "expected": 0.628,
+            "fga": 1746
+          },
+          "Mid-Range": {
+            "actual": 0.399,
+            "expected": 0.423,
+            "fga": 610
+          },
+          "Corner 3": {
+            "actual": 0.341,
+            "expected": 0.346,
+            "fga": 991
+          },
+          "Above Break 3": {
+            "actual": 0.332,
+            "expected": 0.356,
+            "fga": 2551
+          }
+        }
+      },
+      {
+        "name": "LA Clippers",
+        "overall": {
+          "actual": 0.445,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.65,
+            "expected": 0.63,
+            "fga": 1927
+          },
+          "Mid-Range": {
+            "actual": 0.404,
+            "expected": 0.441,
+            "fga": 767
+          },
+          "Corner 3": {
+            "actual": 0.353,
+            "expected": 0.353,
+            "fga": 1219
+          },
+          "Above Break 3": {
+            "actual": 0.318,
+            "expected": 0.352,
+            "fga": 2589
+          }
+        }
+      },
+      {
+        "name": "Philadelphia 76ers",
+        "overall": {
+          "actual": 0.447,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.644,
+            "expected": 0.624,
+            "fga": 2021
+          },
+          "Mid-Range": {
+            "actual": 0.417,
+            "expected": 0.435,
+            "fga": 908
+          },
+          "Corner 3": {
+            "actual": 0.352,
+            "expected": 0.358,
+            "fga": 960
+          },
+          "Above Break 3": {
+            "actual": 0.332,
+            "expected": 0.349,
+            "fga": 2508
+          }
+        }
+      },
+      {
+        "name": "Phoenix Suns",
+        "overall": {
+          "actual": 0.458,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.651,
+            "expected": 0.63,
+            "fga": 2160
+          },
+          "Mid-Range": {
+            "actual": 0.411,
+            "expected": 0.427,
+            "fga": 834
+          },
+          "Corner 3": {
+            "actual": 0.362,
+            "expected": 0.361,
+            "fga": 1055
+          },
+          "Above Break 3": {
+            "actual": 0.343,
+            "expected": 0.343,
+            "fga": 2799
+          }
+        }
+      },
+      {
+        "name": "Toronto Raptors",
+        "overall": {
+          "actual": 0.462,
+          "expected": 0.462
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.656,
+            "expected": 0.632,
+            "fga": 2200
+          },
+          "Mid-Range": {
+            "actual": 0.418,
+            "expected": 0.424,
+            "fga": 766
+          },
+          "Corner 3": {
+            "actual": 0.352,
+            "expected": 0.358,
+            "fga": 1116
+          },
+          "Above Break 3": {
+            "actual": 0.336,
+            "expected": 0.348,
+            "fga": 3049
+          }
+        }
+      },
+      {
+        "name": "Orlando Magic",
+        "overall": {
+          "actual": 0.447,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.646,
+            "expected": 0.621,
+            "fga": 2141
+          },
+          "Mid-Range": {
+            "actual": 0.403,
+            "expected": 0.424,
+            "fga": 788
+          },
+          "Corner 3": {
+            "actual": 0.364,
+            "expected": 0.358,
+            "fga": 1038
+          },
+          "Above Break 3": {
+            "actual": 0.33,
+            "expected": 0.353,
+            "fga": 2380
+          }
+        }
+      },
+      {
+        "name": "Atlanta Hawks",
+        "overall": {
+          "actual": 0.452,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.642,
+            "expected": 0.637,
+            "fga": 2189
+          },
+          "Mid-Range": {
+            "actual": 0.391,
+            "expected": 0.436,
+            "fga": 886
+          },
+          "Corner 3": {
+            "actual": 0.381,
+            "expected": 0.36,
+            "fga": 1173
+          },
+          "Above Break 3": {
+            "actual": 0.353,
+            "expected": 0.354,
+            "fga": 2737
+          }
+        }
+      },
+      {
+        "name": "Houston Rockets",
+        "overall": {
+          "actual": 0.447,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.638,
+            "expected": 0.617,
+            "fga": 2259
+          },
+          "Mid-Range": {
+            "actual": 0.393,
+            "expected": 0.425,
+            "fga": 750
+          },
+          "Corner 3": {
+            "actual": 0.36,
+            "expected": 0.357,
+            "fga": 1141
+          },
+          "Above Break 3": {
+            "actual": 0.333,
+            "expected": 0.356,
+            "fga": 2477
+          }
+        }
+      },
+      {
+        "name": "Utah Jazz",
+        "overall": {
+          "actual": 0.458,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.649,
+            "expected": 0.625,
+            "fga": 1990
+          },
+          "Mid-Range": {
+            "actual": 0.403,
+            "expected": 0.433,
+            "fga": 768
+          },
+          "Corner 3": {
+            "actual": 0.343,
+            "expected": 0.342,
+            "fga": 1090
+          },
+          "Above Break 3": {
+            "actual": 0.357,
+            "expected": 0.352,
+            "fga": 2558
+          }
+        }
+      },
+      {
+        "name": "Portland Trail Blazers",
+        "overall": {
+          "actual": 0.456,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.637,
+            "expected": 0.617,
+            "fga": 1989
+          },
+          "Mid-Range": {
+            "actual": 0.399,
+            "expected": 0.429,
+            "fga": 712
+          },
+          "Corner 3": {
+            "actual": 0.369,
+            "expected": 0.361,
+            "fga": 1101
+          },
+          "Above Break 3": {
+            "actual": 0.354,
+            "expected": 0.353,
+            "fga": 2750
+          }
+        }
+      },
+      {
+        "name": "Brooklyn Nets",
+        "overall": {
+          "actual": 0.468,
+          "expected": 0.463
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.643,
+            "expected": 0.626,
+            "fga": 1943
+          },
+          "Mid-Range": {
+            "actual": 0.423,
+            "expected": 0.429,
+            "fga": 775
+          },
+          "Corner 3": {
+            "actual": 0.346,
+            "expected": 0.354,
+            "fga": 838
+          },
+          "Above Break 3": {
+            "actual": 0.343,
+            "expected": 0.346,
+            "fga": 2731
+          }
+        }
+      },
+      {
+        "name": "Chicago Bulls",
+        "overall": {
+          "actual": 0.456,
+          "expected": 0.467
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.657,
+            "expected": 0.627,
+            "fga": 2218
+          },
+          "Mid-Range": {
+            "actual": 0.396,
+            "expected": 0.432,
+            "fga": 895
+          },
+          "Corner 3": {
+            "actual": 0.36,
+            "expected": 0.351,
+            "fga": 1009
+          },
+          "Above Break 3": {
+            "actual": 0.33,
+            "expected": 0.356,
+            "fga": 2890
+          }
+        }
+      },
+      {
+        "name": "San Antonio Spurs",
+        "overall": {
+          "actual": 0.433,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.616,
+            "expected": 0.615,
+            "fga": 1980
+          },
+          "Mid-Range": {
+            "actual": 0.416,
+            "expected": 0.416,
+            "fga": 741
+          },
+          "Corner 3": {
+            "actual": 0.333,
+            "expected": 0.347,
+            "fga": 1004
+          },
+          "Above Break 3": {
+            "actual": 0.354,
+            "expected": 0.356,
+            "fga": 2818
+          }
+        }
+      },
+      {
+        "name": "Washington Wizards",
+        "overall": {
+          "actual": 0.441,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.625,
+            "expected": 0.626,
+            "fga": 1695
+          },
+          "Mid-Range": {
+            "actual": 0.4,
+            "expected": 0.418,
+            "fga": 613
+          },
+          "Corner 3": {
+            "actual": 0.347,
+            "expected": 0.348,
+            "fga": 881
+          },
+          "Above Break 3": {
+            "actual": 0.343,
+            "expected": 0.359,
+            "fga": 2194
+          }
+        }
+      },
+      {
+        "name": "Charlotte Hornets",
+        "overall": {
+          "actual": 0.42,
+          "expected": 0.452
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.643,
+            "expected": 0.626,
+            "fga": 1730
+          },
+          "Mid-Range": {
+            "actual": 0.402,
+            "expected": 0.43,
+            "fga": 708
+          },
+          "Corner 3": {
+            "actual": 0.335,
+            "expected": 0.349,
+            "fga": 913
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.341,
+            "fga": 2879
+          }
+        }
+      },
+      {
+        "name": "Detroit Pistons",
+        "overall": {
+          "actual": 0.42,
+          "expected": 0.446
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.622,
+            "expected": 0.615,
+            "fga": 1629
+          },
+          "Mid-Range": {
+            "actual": 0.375,
+            "expected": 0.421,
+            "fga": 659
+          },
+          "Corner 3": {
+            "actual": 0.333,
+            "expected": 0.351,
+            "fga": 804
+          },
+          "Above Break 3": {
+            "actual": 0.338,
+            "expected": 0.35,
+            "fga": 2591
+          }
+        }
       }
-    },
-    {
-      "name": "Golden State Warriors",
-      "overall": { "actual": 0.472, "expected": 0.459 },
-      "zones": {
-        "At Rim": { "actual": 0.663, "expected": 0.634, "fga": 2102 },
-        "Mid-Range": { "actual": 0.421, "expected": 0.435, "fga": 812 },
-        "Corner 3": { "actual": 0.387, "expected": 0.361, "fga": 1356 },
-        "Above Break 3": { "actual": 0.358, "expected": 0.360, "fga": 3201 }
+    ],
+    "2021-22": [
+      {
+        "name": "Boston Celtics",
+        "overall": {
+          "actual": 0.503,
+          "expected": 0.469
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.683,
+            "expected": 0.642,
+            "fga": 2448
+          },
+          "Mid-Range": {
+            "actual": 0.403,
+            "expected": 0.442,
+            "fga": 991
+          },
+          "Corner 3": {
+            "actual": 0.401,
+            "expected": 0.362,
+            "fga": 1246
+          },
+          "Above Break 3": {
+            "actual": 0.359,
+            "expected": 0.364,
+            "fga": 2833
+          }
+        }
+      },
+      {
+        "name": "Oklahoma City Thunder",
+        "overall": {
+          "actual": 0.468,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.679,
+            "expected": 0.643,
+            "fga": 2139
+          },
+          "Mid-Range": {
+            "actual": 0.41,
+            "expected": 0.43,
+            "fga": 658
+          },
+          "Corner 3": {
+            "actual": 0.377,
+            "expected": 0.372,
+            "fga": 1195
+          },
+          "Above Break 3": {
+            "actual": 0.363,
+            "expected": 0.352,
+            "fga": 3330
+          }
+        }
+      },
+      {
+        "name": "Golden State Warriors",
+        "overall": {
+          "actual": 0.496,
+          "expected": 0.458
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.67,
+            "expected": 0.634,
+            "fga": 2343
+          },
+          "Mid-Range": {
+            "actual": 0.436,
+            "expected": 0.432,
+            "fga": 722
+          },
+          "Corner 3": {
+            "actual": 0.383,
+            "expected": 0.359,
+            "fga": 1279
+          },
+          "Above Break 3": {
+            "actual": 0.364,
+            "expected": 0.36,
+            "fga": 3115
+          }
+        }
+      },
+      {
+        "name": "Denver Nuggets",
+        "overall": {
+          "actual": 0.474,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.663,
+            "expected": 0.641,
+            "fga": 2515
+          },
+          "Mid-Range": {
+            "actual": 0.42,
+            "expected": 0.442,
+            "fga": 1031
+          },
+          "Corner 3": {
+            "actual": 0.376,
+            "expected": 0.364,
+            "fga": 1204
+          },
+          "Above Break 3": {
+            "actual": 0.334,
+            "expected": 0.363,
+            "fga": 3207
+          }
+        }
+      },
+      {
+        "name": "Indiana Pacers",
+        "overall": {
+          "actual": 0.458,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.667,
+            "expected": 0.627,
+            "fga": 2467
+          },
+          "Mid-Range": {
+            "actual": 0.401,
+            "expected": 0.431,
+            "fga": 708
+          },
+          "Corner 3": {
+            "actual": 0.365,
+            "expected": 0.347,
+            "fga": 1242
+          },
+          "Above Break 3": {
+            "actual": 0.362,
+            "expected": 0.352,
+            "fga": 3164
+          }
+        }
+      },
+      {
+        "name": "Cleveland Cavaliers",
+        "overall": {
+          "actual": 0.467,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.658,
+            "expected": 0.637,
+            "fga": 2062
+          },
+          "Mid-Range": {
+            "actual": 0.418,
+            "expected": 0.424,
+            "fga": 865
+          },
+          "Corner 3": {
+            "actual": 0.373,
+            "expected": 0.349,
+            "fga": 1146
+          },
+          "Above Break 3": {
+            "actual": 0.367,
+            "expected": 0.351,
+            "fga": 2495
+          }
+        }
+      },
+      {
+        "name": "Milwaukee Bucks",
+        "overall": {
+          "actual": 0.484,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.689,
+            "expected": 0.635,
+            "fga": 2059
+          },
+          "Mid-Range": {
+            "actual": 0.424,
+            "expected": 0.437,
+            "fga": 822
+          },
+          "Corner 3": {
+            "actual": 0.362,
+            "expected": 0.359,
+            "fga": 953
+          },
+          "Above Break 3": {
+            "actual": 0.349,
+            "expected": 0.362,
+            "fga": 2274
+          }
+        }
+      },
+      {
+        "name": "Miami Heat",
+        "overall": {
+          "actual": 0.479,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.649,
+            "expected": 0.629,
+            "fga": 2019
+          },
+          "Mid-Range": {
+            "actual": 0.423,
+            "expected": 0.438,
+            "fga": 843
+          },
+          "Corner 3": {
+            "actual": 0.391,
+            "expected": 0.366,
+            "fga": 1139
+          },
+          "Above Break 3": {
+            "actual": 0.33,
+            "expected": 0.356,
+            "fga": 2649
+          }
+        }
+      },
+      {
+        "name": "Sacramento Kings",
+        "overall": {
+          "actual": 0.471,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.658,
+            "expected": 0.635,
+            "fga": 1973
+          },
+          "Mid-Range": {
+            "actual": 0.419,
+            "expected": 0.44,
+            "fga": 915
+          },
+          "Corner 3": {
+            "actual": 0.379,
+            "expected": 0.364,
+            "fga": 1128
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.359,
+            "fga": 2812
+          }
+        }
+      },
+      {
+        "name": "Minnesota Timberwolves",
+        "overall": {
+          "actual": 0.48,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.647,
+            "expected": 0.631,
+            "fga": 2153
+          },
+          "Mid-Range": {
+            "actual": 0.386,
+            "expected": 0.433,
+            "fga": 730
+          },
+          "Corner 3": {
+            "actual": 0.371,
+            "expected": 0.357,
+            "fga": 1106
+          },
+          "Above Break 3": {
+            "actual": 0.353,
+            "expected": 0.354,
+            "fga": 2891
+          }
+        }
+      },
+      {
+        "name": "New York Knicks",
+        "overall": {
+          "actual": 0.461,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.658,
+            "expected": 0.627,
+            "fga": 1886
+          },
+          "Mid-Range": {
+            "actual": 0.425,
+            "expected": 0.451,
+            "fga": 828
+          },
+          "Corner 3": {
+            "actual": 0.37,
+            "expected": 0.349,
+            "fga": 956
+          },
+          "Above Break 3": {
+            "actual": 0.338,
+            "expected": 0.358,
+            "fga": 2428
+          }
+        }
+      },
+      {
+        "name": "Dallas Mavericks",
+        "overall": {
+          "actual": 0.471,
+          "expected": 0.458
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.67,
+            "expected": 0.631,
+            "fga": 2076
+          },
+          "Mid-Range": {
+            "actual": 0.41,
+            "expected": 0.43,
+            "fga": 766
+          },
+          "Corner 3": {
+            "actual": 0.383,
+            "expected": 0.349,
+            "fga": 1112
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.353,
+            "fga": 3212
+          }
+        }
+      },
+      {
+        "name": "New Orleans Pelicans",
+        "overall": {
+          "actual": 0.465,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.645,
+            "expected": 0.627,
+            "fga": 1797
+          },
+          "Mid-Range": {
+            "actual": 0.412,
+            "expected": 0.425,
+            "fga": 814
+          },
+          "Corner 3": {
+            "actual": 0.355,
+            "expected": 0.352,
+            "fga": 1072
+          },
+          "Above Break 3": {
+            "actual": 0.349,
+            "expected": 0.354,
+            "fga": 2716
+          }
+        }
+      },
+      {
+        "name": "Los Angeles Lakers",
+        "overall": {
+          "actual": 0.444,
+          "expected": 0.453
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.651,
+            "expected": 0.622,
+            "fga": 2203
+          },
+          "Mid-Range": {
+            "actual": 0.408,
+            "expected": 0.431,
+            "fga": 933
+          },
+          "Corner 3": {
+            "actual": 0.354,
+            "expected": 0.356,
+            "fga": 921
+          },
+          "Above Break 3": {
+            "actual": 0.342,
+            "expected": 0.352,
+            "fga": 2913
+          }
+        }
+      },
+      {
+        "name": "Memphis Grizzlies",
+        "overall": {
+          "actual": 0.458,
+          "expected": 0.449
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.632,
+            "expected": 0.629,
+            "fga": 2178
+          },
+          "Mid-Range": {
+            "actual": 0.4,
+            "expected": 0.423,
+            "fga": 646
+          },
+          "Corner 3": {
+            "actual": 0.373,
+            "expected": 0.35,
+            "fga": 886
+          },
+          "Above Break 3": {
+            "actual": 0.34,
+            "expected": 0.354,
+            "fga": 2506
+          }
+        }
+      },
+      {
+        "name": "LA Clippers",
+        "overall": {
+          "actual": 0.461,
+          "expected": 0.464
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.638,
+            "expected": 0.648,
+            "fga": 2270
+          },
+          "Mid-Range": {
+            "actual": 0.418,
+            "expected": 0.432,
+            "fga": 836
+          },
+          "Corner 3": {
+            "actual": 0.365,
+            "expected": 0.358,
+            "fga": 948
+          },
+          "Above Break 3": {
+            "actual": 0.33,
+            "expected": 0.356,
+            "fga": 2558
+          }
+        }
+      },
+      {
+        "name": "Philadelphia 76ers",
+        "overall": {
+          "actual": 0.458,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.661,
+            "expected": 0.623,
+            "fga": 2339
+          },
+          "Mid-Range": {
+            "actual": 0.408,
+            "expected": 0.443,
+            "fga": 899
+          },
+          "Corner 3": {
+            "actual": 0.361,
+            "expected": 0.355,
+            "fga": 902
+          },
+          "Above Break 3": {
+            "actual": 0.351,
+            "expected": 0.35,
+            "fga": 2314
+          }
+        }
+      },
+      {
+        "name": "Phoenix Suns",
+        "overall": {
+          "actual": 0.474,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.658,
+            "expected": 0.633,
+            "fga": 2045
+          },
+          "Mid-Range": {
+            "actual": 0.4,
+            "expected": 0.428,
+            "fga": 750
+          },
+          "Corner 3": {
+            "actual": 0.356,
+            "expected": 0.364,
+            "fga": 1085
+          },
+          "Above Break 3": {
+            "actual": 0.342,
+            "expected": 0.366,
+            "fga": 2954
+          }
+        }
+      },
+      {
+        "name": "Toronto Raptors",
+        "overall": {
+          "actual": 0.441,
+          "expected": 0.452
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.652,
+            "expected": 0.618,
+            "fga": 1811
+          },
+          "Mid-Range": {
+            "actual": 0.41,
+            "expected": 0.426,
+            "fga": 700
+          },
+          "Corner 3": {
+            "actual": 0.365,
+            "expected": 0.355,
+            "fga": 883
+          },
+          "Above Break 3": {
+            "actual": 0.325,
+            "expected": 0.359,
+            "fga": 2601
+          }
+        }
+      },
+      {
+        "name": "Orlando Magic",
+        "overall": {
+          "actual": 0.444,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.628,
+            "expected": 0.627,
+            "fga": 2129
+          },
+          "Mid-Range": {
+            "actual": 0.388,
+            "expected": 0.423,
+            "fga": 691
+          },
+          "Corner 3": {
+            "actual": 0.349,
+            "expected": 0.35,
+            "fga": 1017
+          },
+          "Above Break 3": {
+            "actual": 0.325,
+            "expected": 0.352,
+            "fga": 2267
+          }
+        }
+      },
+      {
+        "name": "Atlanta Hawks",
+        "overall": {
+          "actual": 0.465,
+          "expected": 0.464
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.658,
+            "expected": 0.635,
+            "fga": 2009
+          },
+          "Mid-Range": {
+            "actual": 0.417,
+            "expected": 0.431,
+            "fga": 800
+          },
+          "Corner 3": {
+            "actual": 0.344,
+            "expected": 0.356,
+            "fga": 1044
+          },
+          "Above Break 3": {
+            "actual": 0.331,
+            "expected": 0.352,
+            "fga": 2732
+          }
+        }
+      },
+      {
+        "name": "Houston Rockets",
+        "overall": {
+          "actual": 0.448,
+          "expected": 0.453
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.648,
+            "expected": 0.621,
+            "fga": 2310
+          },
+          "Mid-Range": {
+            "actual": 0.416,
+            "expected": 0.417,
+            "fga": 764
+          },
+          "Corner 3": {
+            "actual": 0.336,
+            "expected": 0.345,
+            "fga": 1103
+          },
+          "Above Break 3": {
+            "actual": 0.341,
+            "expected": 0.357,
+            "fga": 2291
+          }
+        }
+      },
+      {
+        "name": "Utah Jazz",
+        "overall": {
+          "actual": 0.454,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.655,
+            "expected": 0.627,
+            "fga": 1993
+          },
+          "Mid-Range": {
+            "actual": 0.396,
+            "expected": 0.431,
+            "fga": 648
+          },
+          "Corner 3": {
+            "actual": 0.361,
+            "expected": 0.358,
+            "fga": 1024
+          },
+          "Above Break 3": {
+            "actual": 0.333,
+            "expected": 0.351,
+            "fga": 2290
+          }
+        }
+      },
+      {
+        "name": "Portland Trail Blazers",
+        "overall": {
+          "actual": 0.449,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.638,
+            "expected": 0.629,
+            "fga": 1824
+          },
+          "Mid-Range": {
+            "actual": 0.404,
+            "expected": 0.425,
+            "fga": 804
+          },
+          "Corner 3": {
+            "actual": 0.362,
+            "expected": 0.361,
+            "fga": 1072
+          },
+          "Above Break 3": {
+            "actual": 0.356,
+            "expected": 0.36,
+            "fga": 2484
+          }
+        }
+      },
+      {
+        "name": "Brooklyn Nets",
+        "overall": {
+          "actual": 0.452,
+          "expected": 0.458
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.643,
+            "expected": 0.632,
+            "fga": 1700
+          },
+          "Mid-Range": {
+            "actual": 0.414,
+            "expected": 0.42,
+            "fga": 688
+          },
+          "Corner 3": {
+            "actual": 0.35,
+            "expected": 0.351,
+            "fga": 976
+          },
+          "Above Break 3": {
+            "actual": 0.334,
+            "expected": 0.348,
+            "fga": 2441
+          }
+        }
+      },
+      {
+        "name": "Chicago Bulls",
+        "overall": {
+          "actual": 0.436,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.658,
+            "expected": 0.626,
+            "fga": 2268
+          },
+          "Mid-Range": {
+            "actual": 0.406,
+            "expected": 0.428,
+            "fga": 720
+          },
+          "Corner 3": {
+            "actual": 0.362,
+            "expected": 0.352,
+            "fga": 887
+          },
+          "Above Break 3": {
+            "actual": 0.344,
+            "expected": 0.358,
+            "fga": 2566
+          }
+        }
+      },
+      {
+        "name": "San Antonio Spurs",
+        "overall": {
+          "actual": 0.46,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.635,
+            "expected": 0.613,
+            "fga": 1821
+          },
+          "Mid-Range": {
+            "actual": 0.392,
+            "expected": 0.422,
+            "fga": 610
+          },
+          "Corner 3": {
+            "actual": 0.363,
+            "expected": 0.35,
+            "fga": 887
+          },
+          "Above Break 3": {
+            "actual": 0.351,
+            "expected": 0.353,
+            "fga": 2301
+          }
+        }
+      },
+      {
+        "name": "Washington Wizards",
+        "overall": {
+          "actual": 0.445,
+          "expected": 0.451
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.627,
+            "expected": 0.624,
+            "fga": 1831
+          },
+          "Mid-Range": {
+            "actual": 0.402,
+            "expected": 0.422,
+            "fga": 771
+          },
+          "Corner 3": {
+            "actual": 0.346,
+            "expected": 0.351,
+            "fga": 976
+          },
+          "Above Break 3": {
+            "actual": 0.349,
+            "expected": 0.349,
+            "fga": 2260
+          }
+        }
+      },
+      {
+        "name": "Charlotte Hornets",
+        "overall": {
+          "actual": 0.446,
+          "expected": 0.449
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.65,
+            "expected": 0.622,
+            "fga": 1913
+          },
+          "Mid-Range": {
+            "actual": 0.385,
+            "expected": 0.419,
+            "fga": 667
+          },
+          "Corner 3": {
+            "actual": 0.349,
+            "expected": 0.348,
+            "fga": 854
+          },
+          "Above Break 3": {
+            "actual": 0.336,
+            "expected": 0.354,
+            "fga": 2597
+          }
+        }
+      },
+      {
+        "name": "Detroit Pistons",
+        "overall": {
+          "actual": 0.433,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.617,
+            "expected": 0.615,
+            "fga": 1871
+          },
+          "Mid-Range": {
+            "actual": 0.408,
+            "expected": 0.418,
+            "fga": 689
+          },
+          "Corner 3": {
+            "actual": 0.336,
+            "expected": 0.347,
+            "fga": 902
+          },
+          "Above Break 3": {
+            "actual": 0.338,
+            "expected": 0.354,
+            "fga": 2177
+          }
+        }
       }
-    },
-    {
-      "name": "Denver Nuggets",
-      "overall": { "actual": 0.471, "expected": 0.460 },
-      "zones": {
-        "At Rim": { "actual": 0.671, "expected": 0.637, "fga": 2276 },
-        "Mid-Range": { "actual": 0.428, "expected": 0.441, "fga": 967 },
-        "Corner 3": { "actual": 0.372, "expected": 0.358, "fga": 1089 },
-        "Above Break 3": { "actual": 0.349, "expected": 0.358, "fga": 2834 }
+    ],
+    "2022-23": [
+      {
+        "name": "Boston Celtics",
+        "overall": {
+          "actual": 0.489,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.689,
+            "expected": 0.637,
+            "fga": 2375
+          },
+          "Mid-Range": {
+            "actual": 0.435,
+            "expected": 0.433,
+            "fga": 828
+          },
+          "Corner 3": {
+            "actual": 0.393,
+            "expected": 0.368,
+            "fga": 1282
+          },
+          "Above Break 3": {
+            "actual": 0.36,
+            "expected": 0.353,
+            "fga": 2645
+          }
+        }
+      },
+      {
+        "name": "Oklahoma City Thunder",
+        "overall": {
+          "actual": 0.472,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.687,
+            "expected": 0.648,
+            "fga": 2430
+          },
+          "Mid-Range": {
+            "actual": 0.406,
+            "expected": 0.43,
+            "fga": 744
+          },
+          "Corner 3": {
+            "actual": 0.391,
+            "expected": 0.366,
+            "fga": 1040
+          },
+          "Above Break 3": {
+            "actual": 0.348,
+            "expected": 0.364,
+            "fga": 2990
+          }
+        }
+      },
+      {
+        "name": "Golden State Warriors",
+        "overall": {
+          "actual": 0.478,
+          "expected": 0.458
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.676,
+            "expected": 0.645,
+            "fga": 2069
+          },
+          "Mid-Range": {
+            "actual": 0.44,
+            "expected": 0.441,
+            "fga": 881
+          },
+          "Corner 3": {
+            "actual": 0.393,
+            "expected": 0.354,
+            "fga": 1259
+          },
+          "Above Break 3": {
+            "actual": 0.358,
+            "expected": 0.359,
+            "fga": 3480
+          }
+        }
+      },
+      {
+        "name": "Denver Nuggets",
+        "overall": {
+          "actual": 0.481,
+          "expected": 0.458
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.671,
+            "expected": 0.638,
+            "fga": 2498
+          },
+          "Mid-Range": {
+            "actual": 0.442,
+            "expected": 0.431,
+            "fga": 925
+          },
+          "Corner 3": {
+            "actual": 0.377,
+            "expected": 0.356,
+            "fga": 1059
+          },
+          "Above Break 3": {
+            "actual": 0.338,
+            "expected": 0.347,
+            "fga": 2629
+          }
+        }
+      },
+      {
+        "name": "Indiana Pacers",
+        "overall": {
+          "actual": 0.455,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.648,
+            "expected": 0.633,
+            "fga": 2130
+          },
+          "Mid-Range": {
+            "actual": 0.414,
+            "expected": 0.429,
+            "fga": 779
+          },
+          "Corner 3": {
+            "actual": 0.359,
+            "expected": 0.359,
+            "fga": 1325
+          },
+          "Above Break 3": {
+            "actual": 0.34,
+            "expected": 0.366,
+            "fga": 3112
+          }
+        }
+      },
+      {
+        "name": "Cleveland Cavaliers",
+        "overall": {
+          "actual": 0.48,
+          "expected": 0.462
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.66,
+            "expected": 0.636,
+            "fga": 2399
+          },
+          "Mid-Range": {
+            "actual": 0.417,
+            "expected": 0.435,
+            "fga": 867
+          },
+          "Corner 3": {
+            "actual": 0.365,
+            "expected": 0.343,
+            "fga": 1038
+          },
+          "Above Break 3": {
+            "actual": 0.345,
+            "expected": 0.363,
+            "fga": 2863
+          }
+        }
+      },
+      {
+        "name": "Milwaukee Bucks",
+        "overall": {
+          "actual": 0.485,
+          "expected": 0.458
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.663,
+            "expected": 0.643,
+            "fga": 2491
+          },
+          "Mid-Range": {
+            "actual": 0.419,
+            "expected": 0.441,
+            "fga": 813
+          },
+          "Corner 3": {
+            "actual": 0.357,
+            "expected": 0.366,
+            "fga": 1176
+          },
+          "Above Break 3": {
+            "actual": 0.332,
+            "expected": 0.367,
+            "fga": 2559
+          }
+        }
+      },
+      {
+        "name": "Miami Heat",
+        "overall": {
+          "actual": 0.48,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.656,
+            "expected": 0.632,
+            "fga": 1995
+          },
+          "Mid-Range": {
+            "actual": 0.423,
+            "expected": 0.426,
+            "fga": 727
+          },
+          "Corner 3": {
+            "actual": 0.378,
+            "expected": 0.361,
+            "fga": 1427
+          },
+          "Above Break 3": {
+            "actual": 0.332,
+            "expected": 0.363,
+            "fga": 2784
+          }
+        }
+      },
+      {
+        "name": "Sacramento Kings",
+        "overall": {
+          "actual": 0.471,
+          "expected": 0.45
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.656,
+            "expected": 0.636,
+            "fga": 2209
+          },
+          "Mid-Range": {
+            "actual": 0.407,
+            "expected": 0.432,
+            "fga": 967
+          },
+          "Corner 3": {
+            "actual": 0.372,
+            "expected": 0.361,
+            "fga": 1119
+          },
+          "Above Break 3": {
+            "actual": 0.35,
+            "expected": 0.352,
+            "fga": 2848
+          }
+        }
+      },
+      {
+        "name": "Minnesota Timberwolves",
+        "overall": {
+          "actual": 0.468,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.654,
+            "expected": 0.634,
+            "fga": 1938
+          },
+          "Mid-Range": {
+            "actual": 0.407,
+            "expected": 0.43,
+            "fga": 696
+          },
+          "Corner 3": {
+            "actual": 0.363,
+            "expected": 0.352,
+            "fga": 1183
+          },
+          "Above Break 3": {
+            "actual": 0.362,
+            "expected": 0.352,
+            "fga": 2438
+          }
+        }
+      },
+      {
+        "name": "New York Knicks",
+        "overall": {
+          "actual": 0.452,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.677,
+            "expected": 0.632,
+            "fga": 1974
+          },
+          "Mid-Range": {
+            "actual": 0.427,
+            "expected": 0.431,
+            "fga": 1022
+          },
+          "Corner 3": {
+            "actual": 0.372,
+            "expected": 0.357,
+            "fga": 1073
+          },
+          "Above Break 3": {
+            "actual": 0.329,
+            "expected": 0.356,
+            "fga": 2640
+          }
+        }
+      },
+      {
+        "name": "Dallas Mavericks",
+        "overall": {
+          "actual": 0.479,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.66,
+            "expected": 0.638,
+            "fga": 2188
+          },
+          "Mid-Range": {
+            "actual": 0.412,
+            "expected": 0.434,
+            "fga": 822
+          },
+          "Corner 3": {
+            "actual": 0.376,
+            "expected": 0.36,
+            "fga": 1057
+          },
+          "Above Break 3": {
+            "actual": 0.36,
+            "expected": 0.356,
+            "fga": 3281
+          }
+        }
+      },
+      {
+        "name": "New Orleans Pelicans",
+        "overall": {
+          "actual": 0.45,
+          "expected": 0.451
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.652,
+            "expected": 0.626,
+            "fga": 1817
+          },
+          "Mid-Range": {
+            "actual": 0.407,
+            "expected": 0.42,
+            "fga": 802
+          },
+          "Corner 3": {
+            "actual": 0.364,
+            "expected": 0.358,
+            "fga": 974
+          },
+          "Above Break 3": {
+            "actual": 0.349,
+            "expected": 0.345,
+            "fga": 2543
+          }
+        }
+      },
+      {
+        "name": "Los Angeles Lakers",
+        "overall": {
+          "actual": 0.454,
+          "expected": 0.462
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.659,
+            "expected": 0.633,
+            "fga": 1951
+          },
+          "Mid-Range": {
+            "actual": 0.408,
+            "expected": 0.425,
+            "fga": 781
+          },
+          "Corner 3": {
+            "actual": 0.351,
+            "expected": 0.35,
+            "fga": 1007
+          },
+          "Above Break 3": {
+            "actual": 0.339,
+            "expected": 0.357,
+            "fga": 2531
+          }
+        }
+      },
+      {
+        "name": "Memphis Grizzlies",
+        "overall": {
+          "actual": 0.463,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.654,
+            "expected": 0.633,
+            "fga": 2022
+          },
+          "Mid-Range": {
+            "actual": 0.401,
+            "expected": 0.423,
+            "fga": 670
+          },
+          "Corner 3": {
+            "actual": 0.363,
+            "expected": 0.35,
+            "fga": 878
+          },
+          "Above Break 3": {
+            "actual": 0.352,
+            "expected": 0.357,
+            "fga": 2609
+          }
+        }
+      },
+      {
+        "name": "LA Clippers",
+        "overall": {
+          "actual": 0.456,
+          "expected": 0.448
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.649,
+            "expected": 0.634,
+            "fga": 2255
+          },
+          "Mid-Range": {
+            "actual": 0.417,
+            "expected": 0.43,
+            "fga": 703
+          },
+          "Corner 3": {
+            "actual": 0.373,
+            "expected": 0.354,
+            "fga": 938
+          },
+          "Above Break 3": {
+            "actual": 0.356,
+            "expected": 0.351,
+            "fga": 3188
+          }
+        }
+      },
+      {
+        "name": "Philadelphia 76ers",
+        "overall": {
+          "actual": 0.456,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.653,
+            "expected": 0.625,
+            "fga": 2092
+          },
+          "Mid-Range": {
+            "actual": 0.431,
+            "expected": 0.427,
+            "fga": 782
+          },
+          "Corner 3": {
+            "actual": 0.346,
+            "expected": 0.355,
+            "fga": 899
+          },
+          "Above Break 3": {
+            "actual": 0.352,
+            "expected": 0.363,
+            "fga": 2801
+          }
+        }
+      },
+      {
+        "name": "Phoenix Suns",
+        "overall": {
+          "actual": 0.47,
+          "expected": 0.462
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.649,
+            "expected": 0.63,
+            "fga": 1745
+          },
+          "Mid-Range": {
+            "actual": 0.407,
+            "expected": 0.435,
+            "fga": 717
+          },
+          "Corner 3": {
+            "actual": 0.353,
+            "expected": 0.356,
+            "fga": 1150
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.361,
+            "fga": 3087
+          }
+        }
+      },
+      {
+        "name": "Toronto Raptors",
+        "overall": {
+          "actual": 0.451,
+          "expected": 0.449
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.654,
+            "expected": 0.626,
+            "fga": 1931
+          },
+          "Mid-Range": {
+            "actual": 0.394,
+            "expected": 0.428,
+            "fga": 761
+          },
+          "Corner 3": {
+            "actual": 0.362,
+            "expected": 0.346,
+            "fga": 887
+          },
+          "Above Break 3": {
+            "actual": 0.34,
+            "expected": 0.35,
+            "fga": 2471
+          }
+        }
+      },
+      {
+        "name": "Orlando Magic",
+        "overall": {
+          "actual": 0.465,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.626,
+            "expected": 0.63,
+            "fga": 1871
+          },
+          "Mid-Range": {
+            "actual": 0.402,
+            "expected": 0.422,
+            "fga": 811
+          },
+          "Corner 3": {
+            "actual": 0.368,
+            "expected": 0.351,
+            "fga": 1038
+          },
+          "Above Break 3": {
+            "actual": 0.339,
+            "expected": 0.352,
+            "fga": 2427
+          }
+        }
+      },
+      {
+        "name": "Atlanta Hawks",
+        "overall": {
+          "actual": 0.458,
+          "expected": 0.464
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.642,
+            "expected": 0.632,
+            "fga": 2356
+          },
+          "Mid-Range": {
+            "actual": 0.406,
+            "expected": 0.444,
+            "fga": 928
+          },
+          "Corner 3": {
+            "actual": 0.33,
+            "expected": 0.355,
+            "fga": 1022
+          },
+          "Above Break 3": {
+            "actual": 0.36,
+            "expected": 0.345,
+            "fga": 3210
+          }
+        }
+      },
+      {
+        "name": "Houston Rockets",
+        "overall": {
+          "actual": 0.436,
+          "expected": 0.453
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.644,
+            "expected": 0.624,
+            "fga": 2081
+          },
+          "Mid-Range": {
+            "actual": 0.418,
+            "expected": 0.432,
+            "fga": 751
+          },
+          "Corner 3": {
+            "actual": 0.357,
+            "expected": 0.352,
+            "fga": 952
+          },
+          "Above Break 3": {
+            "actual": 0.333,
+            "expected": 0.355,
+            "fga": 2592
+          }
+        }
+      },
+      {
+        "name": "Utah Jazz",
+        "overall": {
+          "actual": 0.437,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.63,
+            "expected": 0.629,
+            "fga": 1712
+          },
+          "Mid-Range": {
+            "actual": 0.409,
+            "expected": 0.424,
+            "fga": 780
+          },
+          "Corner 3": {
+            "actual": 0.353,
+            "expected": 0.348,
+            "fga": 1017
+          },
+          "Above Break 3": {
+            "actual": 0.316,
+            "expected": 0.359,
+            "fga": 2554
+          }
+        }
+      },
+      {
+        "name": "Portland Trail Blazers",
+        "overall": {
+          "actual": 0.454,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.616,
+            "expected": 0.63,
+            "fga": 1674
+          },
+          "Mid-Range": {
+            "actual": 0.399,
+            "expected": 0.428,
+            "fga": 764
+          },
+          "Corner 3": {
+            "actual": 0.368,
+            "expected": 0.352,
+            "fga": 854
+          },
+          "Above Break 3": {
+            "actual": 0.345,
+            "expected": 0.362,
+            "fga": 2305
+          }
+        }
+      },
+      {
+        "name": "Brooklyn Nets",
+        "overall": {
+          "actual": 0.438,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.631,
+            "expected": 0.625,
+            "fga": 1837
+          },
+          "Mid-Range": {
+            "actual": 0.41,
+            "expected": 0.426,
+            "fga": 774
+          },
+          "Corner 3": {
+            "actual": 0.363,
+            "expected": 0.353,
+            "fga": 1079
+          },
+          "Above Break 3": {
+            "actual": 0.339,
+            "expected": 0.355,
+            "fga": 2643
+          }
+        }
+      },
+      {
+        "name": "Chicago Bulls",
+        "overall": {
+          "actual": 0.463,
+          "expected": 0.468
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.651,
+            "expected": 0.639,
+            "fga": 1922
+          },
+          "Mid-Range": {
+            "actual": 0.411,
+            "expected": 0.434,
+            "fga": 871
+          },
+          "Corner 3": {
+            "actual": 0.355,
+            "expected": 0.367,
+            "fga": 1027
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.37,
+            "fga": 2379
+          }
+        }
+      },
+      {
+        "name": "San Antonio Spurs",
+        "overall": {
+          "actual": 0.459,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.62,
+            "expected": 0.62,
+            "fga": 1739
+          },
+          "Mid-Range": {
+            "actual": 0.376,
+            "expected": 0.427,
+            "fga": 711
+          },
+          "Corner 3": {
+            "actual": 0.36,
+            "expected": 0.344,
+            "fga": 826
+          },
+          "Above Break 3": {
+            "actual": 0.334,
+            "expected": 0.357,
+            "fga": 2249
+          }
+        }
+      },
+      {
+        "name": "Washington Wizards",
+        "overall": {
+          "actual": 0.447,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.629,
+            "expected": 0.622,
+            "fga": 1754
+          },
+          "Mid-Range": {
+            "actual": 0.392,
+            "expected": 0.426,
+            "fga": 718
+          },
+          "Corner 3": {
+            "actual": 0.355,
+            "expected": 0.344,
+            "fga": 1043
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.353,
+            "fga": 2437
+          }
+        }
+      },
+      {
+        "name": "Charlotte Hornets",
+        "overall": {
+          "actual": 0.457,
+          "expected": 0.463
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.625,
+            "expected": 0.615,
+            "fga": 2044
+          },
+          "Mid-Range": {
+            "actual": 0.375,
+            "expected": 0.417,
+            "fga": 726
+          },
+          "Corner 3": {
+            "actual": 0.357,
+            "expected": 0.365,
+            "fga": 1070
+          },
+          "Above Break 3": {
+            "actual": 0.339,
+            "expected": 0.35,
+            "fga": 2829
+          }
+        }
+      },
+      {
+        "name": "Detroit Pistons",
+        "overall": {
+          "actual": 0.444,
+          "expected": 0.451
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.624,
+            "expected": 0.619,
+            "fga": 1614
+          },
+          "Mid-Range": {
+            "actual": 0.369,
+            "expected": 0.419,
+            "fga": 728
+          },
+          "Corner 3": {
+            "actual": 0.331,
+            "expected": 0.341,
+            "fga": 908
+          },
+          "Above Break 3": {
+            "actual": 0.34,
+            "expected": 0.348,
+            "fga": 2394
+          }
+        }
       }
-    },
-    {
-      "name": "Indiana Pacers",
-      "overall": { "actual": 0.470, "expected": 0.460 },
-      "zones": {
-        "At Rim": { "actual": 0.659, "expected": 0.632, "fga": 2187 },
-        "Mid-Range": { "actual": 0.408, "expected": 0.429, "fga": 723 },
-        "Corner 3": { "actual": 0.375, "expected": 0.356, "fga": 1178 },
-        "Above Break 3": { "actual": 0.356, "expected": 0.358, "fga": 3087 }
+    ],
+    "2023-24": [
+      {
+        "name": "Boston Celtics",
+        "overall": {
+          "actual": 0.48,
+          "expected": 0.462
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.682,
+            "expected": 0.641,
+            "fga": 2341
+          },
+          "Mid-Range": {
+            "actual": 0.412,
+            "expected": 0.438,
+            "fga": 891
+          },
+          "Corner 3": {
+            "actual": 0.391,
+            "expected": 0.362,
+            "fga": 1203
+          },
+          "Above Break 3": {
+            "actual": 0.354,
+            "expected": 0.361,
+            "fga": 3102
+          }
+        }
+      },
+      {
+        "name": "Oklahoma City Thunder",
+        "overall": {
+          "actual": 0.473,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.675,
+            "expected": 0.638,
+            "fga": 2198
+          },
+          "Mid-Range": {
+            "actual": 0.405,
+            "expected": 0.431,
+            "fga": 743
+          },
+          "Corner 3": {
+            "actual": 0.383,
+            "expected": 0.359,
+            "fga": 1124
+          },
+          "Above Break 3": {
+            "actual": 0.351,
+            "expected": 0.358,
+            "fga": 2987
+          }
+        }
+      },
+      {
+        "name": "Golden State Warriors",
+        "overall": {
+          "actual": 0.472,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.663,
+            "expected": 0.634,
+            "fga": 2102
+          },
+          "Mid-Range": {
+            "actual": 0.421,
+            "expected": 0.435,
+            "fga": 812
+          },
+          "Corner 3": {
+            "actual": 0.387,
+            "expected": 0.361,
+            "fga": 1356
+          },
+          "Above Break 3": {
+            "actual": 0.358,
+            "expected": 0.36,
+            "fga": 3201
+          }
+        }
+      },
+      {
+        "name": "Denver Nuggets",
+        "overall": {
+          "actual": 0.471,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.671,
+            "expected": 0.637,
+            "fga": 2276
+          },
+          "Mid-Range": {
+            "actual": 0.428,
+            "expected": 0.441,
+            "fga": 967
+          },
+          "Corner 3": {
+            "actual": 0.372,
+            "expected": 0.358,
+            "fga": 1089
+          },
+          "Above Break 3": {
+            "actual": 0.349,
+            "expected": 0.358,
+            "fga": 2834
+          }
+        }
+      },
+      {
+        "name": "Indiana Pacers",
+        "overall": {
+          "actual": 0.47,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.659,
+            "expected": 0.632,
+            "fga": 2187
+          },
+          "Mid-Range": {
+            "actual": 0.408,
+            "expected": 0.429,
+            "fga": 723
+          },
+          "Corner 3": {
+            "actual": 0.375,
+            "expected": 0.356,
+            "fga": 1178
+          },
+          "Above Break 3": {
+            "actual": 0.356,
+            "expected": 0.358,
+            "fga": 3087
+          }
+        }
+      },
+      {
+        "name": "Cleveland Cavaliers",
+        "overall": {
+          "actual": 0.468,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.664,
+            "expected": 0.637,
+            "fga": 2089
+          },
+          "Mid-Range": {
+            "actual": 0.419,
+            "expected": 0.433,
+            "fga": 892
+          },
+          "Corner 3": {
+            "actual": 0.368,
+            "expected": 0.355,
+            "fga": 1034
+          },
+          "Above Break 3": {
+            "actual": 0.352,
+            "expected": 0.357,
+            "fga": 2876
+          }
+        }
+      },
+      {
+        "name": "Milwaukee Bucks",
+        "overall": {
+          "actual": 0.466,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.678,
+            "expected": 0.644,
+            "fga": 2312
+          },
+          "Mid-Range": {
+            "actual": 0.415,
+            "expected": 0.436,
+            "fga": 834
+          },
+          "Corner 3": {
+            "actual": 0.363,
+            "expected": 0.356,
+            "fga": 1102
+          },
+          "Above Break 3": {
+            "actual": 0.342,
+            "expected": 0.355,
+            "fga": 2543
+          }
+        }
+      },
+      {
+        "name": "Miami Heat",
+        "overall": {
+          "actual": 0.464,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.658,
+            "expected": 0.633,
+            "fga": 2034
+          },
+          "Mid-Range": {
+            "actual": 0.416,
+            "expected": 0.43,
+            "fga": 801
+          },
+          "Corner 3": {
+            "actual": 0.381,
+            "expected": 0.358,
+            "fga": 1243
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.355,
+            "fga": 2678
+          }
+        }
+      },
+      {
+        "name": "Sacramento Kings",
+        "overall": {
+          "actual": 0.461,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.657,
+            "expected": 0.633,
+            "fga": 2123
+          },
+          "Mid-Range": {
+            "actual": 0.422,
+            "expected": 0.434,
+            "fga": 876
+          },
+          "Corner 3": {
+            "actual": 0.369,
+            "expected": 0.356,
+            "fga": 1098
+          },
+          "Above Break 3": {
+            "actual": 0.349,
+            "expected": 0.356,
+            "fga": 2901
+          }
+        }
+      },
+      {
+        "name": "Minnesota Timberwolves",
+        "overall": {
+          "actual": 0.461,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.654,
+            "expected": 0.631,
+            "fga": 2067
+          },
+          "Mid-Range": {
+            "actual": 0.404,
+            "expected": 0.428,
+            "fga": 756
+          },
+          "Corner 3": {
+            "actual": 0.371,
+            "expected": 0.354,
+            "fga": 1112
+          },
+          "Above Break 3": {
+            "actual": 0.35,
+            "expected": 0.355,
+            "fga": 2743
+          }
+        }
+      },
+      {
+        "name": "New York Knicks",
+        "overall": {
+          "actual": 0.461,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.66,
+            "expected": 0.634,
+            "fga": 2098
+          },
+          "Mid-Range": {
+            "actual": 0.427,
+            "expected": 0.437,
+            "fga": 891
+          },
+          "Corner 3": {
+            "actual": 0.365,
+            "expected": 0.355,
+            "fga": 1023
+          },
+          "Above Break 3": {
+            "actual": 0.344,
+            "expected": 0.356,
+            "fga": 2645
+          }
+        }
+      },
+      {
+        "name": "Dallas Mavericks",
+        "overall": {
+          "actual": 0.462,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.662,
+            "expected": 0.636,
+            "fga": 2143
+          },
+          "Mid-Range": {
+            "actual": 0.418,
+            "expected": 0.434,
+            "fga": 812
+          },
+          "Corner 3": {
+            "actual": 0.371,
+            "expected": 0.357,
+            "fga": 1134
+          },
+          "Above Break 3": {
+            "actual": 0.353,
+            "expected": 0.358,
+            "fga": 2934
+          }
+        }
+      },
+      {
+        "name": "New Orleans Pelicans",
+        "overall": {
+          "actual": 0.457,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.652,
+            "expected": 0.631,
+            "fga": 2087
+          },
+          "Mid-Range": {
+            "actual": 0.407,
+            "expected": 0.428,
+            "fga": 743
+          },
+          "Corner 3": {
+            "actual": 0.364,
+            "expected": 0.354,
+            "fga": 1067
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.355,
+            "fga": 2712
+          }
+        }
+      },
+      {
+        "name": "Los Angeles Lakers",
+        "overall": {
+          "actual": 0.455,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.648,
+            "expected": 0.63,
+            "fga": 2012
+          },
+          "Mid-Range": {
+            "actual": 0.413,
+            "expected": 0.43,
+            "fga": 823
+          },
+          "Corner 3": {
+            "actual": 0.362,
+            "expected": 0.354,
+            "fga": 1009
+          },
+          "Above Break 3": {
+            "actual": 0.342,
+            "expected": 0.354,
+            "fga": 2543
+          }
+        }
+      },
+      {
+        "name": "Memphis Grizzlies",
+        "overall": {
+          "actual": 0.452,
+          "expected": 0.451
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.642,
+            "expected": 0.628,
+            "fga": 1989
+          },
+          "Mid-Range": {
+            "actual": 0.402,
+            "expected": 0.425,
+            "fga": 698
+          },
+          "Corner 3": {
+            "actual": 0.359,
+            "expected": 0.352,
+            "fga": 978
+          },
+          "Above Break 3": {
+            "actual": 0.343,
+            "expected": 0.352,
+            "fga": 2634
+          }
+        }
+      },
+      {
+        "name": "LA Clippers",
+        "overall": {
+          "actual": 0.458,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.653,
+            "expected": 0.632,
+            "fga": 2056
+          },
+          "Mid-Range": {
+            "actual": 0.412,
+            "expected": 0.432,
+            "fga": 812
+          },
+          "Corner 3": {
+            "actual": 0.367,
+            "expected": 0.355,
+            "fga": 1089
+          },
+          "Above Break 3": {
+            "actual": 0.347,
+            "expected": 0.357,
+            "fga": 2812
+          }
+        }
+      },
+      {
+        "name": "Philadelphia 76ers",
+        "overall": {
+          "actual": 0.457,
+          "expected": 0.459
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.654,
+            "expected": 0.633,
+            "fga": 2103
+          },
+          "Mid-Range": {
+            "actual": 0.42,
+            "expected": 0.435,
+            "fga": 867
+          },
+          "Corner 3": {
+            "actual": 0.362,
+            "expected": 0.355,
+            "fga": 1012
+          },
+          "Above Break 3": {
+            "actual": 0.342,
+            "expected": 0.356,
+            "fga": 2687
+          }
+        }
+      },
+      {
+        "name": "Phoenix Suns",
+        "overall": {
+          "actual": 0.453,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.647,
+            "expected": 0.63,
+            "fga": 2034
+          },
+          "Mid-Range": {
+            "actual": 0.411,
+            "expected": 0.429,
+            "fga": 812
+          },
+          "Corner 3": {
+            "actual": 0.362,
+            "expected": 0.354,
+            "fga": 1078
+          },
+          "Above Break 3": {
+            "actual": 0.342,
+            "expected": 0.355,
+            "fga": 2756
+          }
+        }
+      },
+      {
+        "name": "Toronto Raptors",
+        "overall": {
+          "actual": 0.45,
+          "expected": 0.454
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.641,
+            "expected": 0.627,
+            "fga": 1978
+          },
+          "Mid-Range": {
+            "actual": 0.405,
+            "expected": 0.427,
+            "fga": 734
+          },
+          "Corner 3": {
+            "actual": 0.358,
+            "expected": 0.352,
+            "fga": 1023
+          },
+          "Above Break 3": {
+            "actual": 0.341,
+            "expected": 0.354,
+            "fga": 2678
+          }
+        }
+      },
+      {
+        "name": "Orlando Magic",
+        "overall": {
+          "actual": 0.447,
+          "expected": 0.452
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.638,
+            "expected": 0.626,
+            "fga": 2012
+          },
+          "Mid-Range": {
+            "actual": 0.398,
+            "expected": 0.424,
+            "fga": 712
+          },
+          "Corner 3": {
+            "actual": 0.355,
+            "expected": 0.351,
+            "fga": 1034
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.353,
+            "fga": 2634
+          }
+        }
+      },
+      {
+        "name": "Atlanta Hawks",
+        "overall": {
+          "actual": 0.455,
+          "expected": 0.461
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.649,
+            "expected": 0.633,
+            "fga": 2143
+          },
+          "Mid-Range": {
+            "actual": 0.415,
+            "expected": 0.435,
+            "fga": 856
+          },
+          "Corner 3": {
+            "actual": 0.363,
+            "expected": 0.357,
+            "fga": 1089
+          },
+          "Above Break 3": {
+            "actual": 0.343,
+            "expected": 0.358,
+            "fga": 2901
+          }
+        }
+      },
+      {
+        "name": "Houston Rockets",
+        "overall": {
+          "actual": 0.449,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.638,
+            "expected": 0.626,
+            "fga": 2023
+          },
+          "Mid-Range": {
+            "actual": 0.401,
+            "expected": 0.424,
+            "fga": 723
+          },
+          "Corner 3": {
+            "actual": 0.355,
+            "expected": 0.351,
+            "fga": 1009
+          },
+          "Above Break 3": {
+            "actual": 0.34,
+            "expected": 0.354,
+            "fga": 2634
+          }
+        }
+      },
+      {
+        "name": "Utah Jazz",
+        "overall": {
+          "actual": 0.449,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.637,
+            "expected": 0.626,
+            "fga": 1978
+          },
+          "Mid-Range": {
+            "actual": 0.406,
+            "expected": 0.428,
+            "fga": 745
+          },
+          "Corner 3": {
+            "actual": 0.354,
+            "expected": 0.352,
+            "fga": 989
+          },
+          "Above Break 3": {
+            "actual": 0.339,
+            "expected": 0.354,
+            "fga": 2567
+          }
+        }
+      },
+      {
+        "name": "Portland Trail Blazers",
+        "overall": {
+          "actual": 0.449,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.636,
+            "expected": 0.625,
+            "fga": 1923
+          },
+          "Mid-Range": {
+            "actual": 0.403,
+            "expected": 0.426,
+            "fga": 712
+          },
+          "Corner 3": {
+            "actual": 0.354,
+            "expected": 0.352,
+            "fga": 978
+          },
+          "Above Break 3": {
+            "actual": 0.34,
+            "expected": 0.356,
+            "fga": 2512
+          }
+        }
+      },
+      {
+        "name": "Brooklyn Nets",
+        "overall": {
+          "actual": 0.447,
+          "expected": 0.456
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.635,
+            "expected": 0.625,
+            "fga": 1945
+          },
+          "Mid-Range": {
+            "actual": 0.399,
+            "expected": 0.425,
+            "fga": 698
+          },
+          "Corner 3": {
+            "actual": 0.351,
+            "expected": 0.351,
+            "fga": 967
+          },
+          "Above Break 3": {
+            "actual": 0.34,
+            "expected": 0.355,
+            "fga": 2489
+          }
+        }
+      },
+      {
+        "name": "Chicago Bulls",
+        "overall": {
+          "actual": 0.45,
+          "expected": 0.46
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.641,
+            "expected": 0.63,
+            "fga": 2023
+          },
+          "Mid-Range": {
+            "actual": 0.409,
+            "expected": 0.431,
+            "fga": 789
+          },
+          "Corner 3": {
+            "actual": 0.357,
+            "expected": 0.354,
+            "fga": 1023
+          },
+          "Above Break 3": {
+            "actual": 0.341,
+            "expected": 0.358,
+            "fga": 2712
+          }
+        }
+      },
+      {
+        "name": "San Antonio Spurs",
+        "overall": {
+          "actual": 0.442,
+          "expected": 0.453
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.628,
+            "expected": 0.62,
+            "fga": 1867
+          },
+          "Mid-Range": {
+            "actual": 0.395,
+            "expected": 0.421,
+            "fga": 678
+          },
+          "Corner 3": {
+            "actual": 0.348,
+            "expected": 0.348,
+            "fga": 923
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.352,
+            "fga": 2456
+          }
+        }
+      },
+      {
+        "name": "Washington Wizards",
+        "overall": {
+          "actual": 0.443,
+          "expected": 0.455
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.63,
+            "expected": 0.622,
+            "fga": 1923
+          },
+          "Mid-Range": {
+            "actual": 0.397,
+            "expected": 0.422,
+            "fga": 689
+          },
+          "Corner 3": {
+            "actual": 0.349,
+            "expected": 0.349,
+            "fga": 934
+          },
+          "Above Break 3": {
+            "actual": 0.337,
+            "expected": 0.354,
+            "fga": 2489
+          }
+        }
+      },
+      {
+        "name": "Charlotte Hornets",
+        "overall": {
+          "actual": 0.444,
+          "expected": 0.457
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.631,
+            "expected": 0.623,
+            "fga": 1934
+          },
+          "Mid-Range": {
+            "actual": 0.398,
+            "expected": 0.424,
+            "fga": 701
+          },
+          "Corner 3": {
+            "actual": 0.351,
+            "expected": 0.35,
+            "fga": 945
+          },
+          "Above Break 3": {
+            "actual": 0.338,
+            "expected": 0.355,
+            "fga": 2512
+          }
+        }
+      },
+      {
+        "name": "Detroit Pistons",
+        "overall": {
+          "actual": 0.437,
+          "expected": 0.452
+        },
+        "zones": {
+          "At Rim": {
+            "actual": 0.622,
+            "expected": 0.618,
+            "fga": 1812
+          },
+          "Mid-Range": {
+            "actual": 0.389,
+            "expected": 0.418,
+            "fga": 654
+          },
+          "Corner 3": {
+            "actual": 0.343,
+            "expected": 0.346,
+            "fga": 889
+          },
+          "Above Break 3": {
+            "actual": 0.334,
+            "expected": 0.351,
+            "fga": 2398
+          }
+        }
       }
-    },
-    {
-      "name": "Cleveland Cavaliers",
-      "overall": { "actual": 0.468, "expected": 0.459 },
-      "zones": {
-        "At Rim": { "actual": 0.664, "expected": 0.637, "fga": 2089 },
-        "Mid-Range": { "actual": 0.419, "expected": 0.433, "fga": 892 },
-        "Corner 3": { "actual": 0.368, "expected": 0.355, "fga": 1034 },
-        "Above Break 3": { "actual": 0.352, "expected": 0.357, "fga": 2876 }
-      }
-    },
-    {
-      "name": "Milwaukee Bucks",
-      "overall": { "actual": 0.466, "expected": 0.459 },
-      "zones": {
-        "At Rim": { "actual": 0.678, "expected": 0.644, "fga": 2312 },
-        "Mid-Range": { "actual": 0.415, "expected": 0.436, "fga": 834 },
-        "Corner 3": { "actual": 0.363, "expected": 0.356, "fga": 1102 },
-        "Above Break 3": { "actual": 0.342, "expected": 0.355, "fga": 2543 }
-      }
-    },
-    {
-      "name": "Miami Heat",
-      "overall": { "actual": 0.464, "expected": 0.456 },
-      "zones": {
-        "At Rim": { "actual": 0.658, "expected": 0.633, "fga": 2034 },
-        "Mid-Range": { "actual": 0.416, "expected": 0.430, "fga": 801 },
-        "Corner 3": { "actual": 0.381, "expected": 0.358, "fga": 1243 },
-        "Above Break 3": { "actual": 0.347, "expected": 0.355, "fga": 2678 }
-      }
-    },
-    {
-      "name": "Sacramento Kings",
-      "overall": { "actual": 0.461, "expected": 0.456 },
-      "zones": {
-        "At Rim": { "actual": 0.657, "expected": 0.633, "fga": 2123 },
-        "Mid-Range": { "actual": 0.422, "expected": 0.434, "fga": 876 },
-        "Corner 3": { "actual": 0.369, "expected": 0.356, "fga": 1098 },
-        "Above Break 3": { "actual": 0.349, "expected": 0.356, "fga": 2901 }
-      }
-    },
-    {
-      "name": "Minnesota Timberwolves",
-      "overall": { "actual": 0.461, "expected": 0.455 },
-      "zones": {
-        "At Rim": { "actual": 0.654, "expected": 0.631, "fga": 2067 },
-        "Mid-Range": { "actual": 0.404, "expected": 0.428, "fga": 756 },
-        "Corner 3": { "actual": 0.371, "expected": 0.354, "fga": 1112 },
-        "Above Break 3": { "actual": 0.350, "expected": 0.355, "fga": 2743 }
-      }
-    },
-    {
-      "name": "New York Knicks",
-      "overall": { "actual": 0.461, "expected": 0.457 },
-      "zones": {
-        "At Rim": { "actual": 0.660, "expected": 0.634, "fga": 2098 },
-        "Mid-Range": { "actual": 0.427, "expected": 0.437, "fga": 891 },
-        "Corner 3": { "actual": 0.365, "expected": 0.355, "fga": 1023 },
-        "Above Break 3": { "actual": 0.344, "expected": 0.356, "fga": 2645 }
-      }
-    },
-    {
-      "name": "Dallas Mavericks",
-      "overall": { "actual": 0.462, "expected": 0.459 },
-      "zones": {
-        "At Rim": { "actual": 0.662, "expected": 0.636, "fga": 2143 },
-        "Mid-Range": { "actual": 0.418, "expected": 0.434, "fga": 812 },
-        "Corner 3": { "actual": 0.371, "expected": 0.357, "fga": 1134 },
-        "Above Break 3": { "actual": 0.353, "expected": 0.358, "fga": 2934 }
-      }
-    },
-    {
-      "name": "New Orleans Pelicans",
-      "overall": { "actual": 0.457, "expected": 0.455 },
-      "zones": {
-        "At Rim": { "actual": 0.652, "expected": 0.631, "fga": 2087 },
-        "Mid-Range": { "actual": 0.407, "expected": 0.428, "fga": 743 },
-        "Corner 3": { "actual": 0.364, "expected": 0.354, "fga": 1067 },
-        "Above Break 3": { "actual": 0.347, "expected": 0.355, "fga": 2712 }
-      }
-    },
-    {
-      "name": "Los Angeles Lakers",
-      "overall": { "actual": 0.455, "expected": 0.455 },
-      "zones": {
-        "At Rim": { "actual": 0.648, "expected": 0.630, "fga": 2012 },
-        "Mid-Range": { "actual": 0.413, "expected": 0.430, "fga": 823 },
-        "Corner 3": { "actual": 0.362, "expected": 0.354, "fga": 1009 },
-        "Above Break 3": { "actual": 0.342, "expected": 0.354, "fga": 2543 }
-      }
-    },
-    {
-      "name": "Memphis Grizzlies",
-      "overall": { "actual": 0.452, "expected": 0.451 },
-      "zones": {
-        "At Rim": { "actual": 0.642, "expected": 0.628, "fga": 1989 },
-        "Mid-Range": { "actual": 0.402, "expected": 0.425, "fga": 698 },
-        "Corner 3": { "actual": 0.359, "expected": 0.352, "fga": 978 },
-        "Above Break 3": { "actual": 0.343, "expected": 0.352, "fga": 2634 }
-      }
-    },
-    {
-      "name": "LA Clippers",
-      "overall": { "actual": 0.458, "expected": 0.459 },
-      "zones": {
-        "At Rim": { "actual": 0.653, "expected": 0.632, "fga": 2056 },
-        "Mid-Range": { "actual": 0.412, "expected": 0.432, "fga": 812 },
-        "Corner 3": { "actual": 0.367, "expected": 0.355, "fga": 1089 },
-        "Above Break 3": { "actual": 0.347, "expected": 0.357, "fga": 2812 }
-      }
-    },
-    {
-      "name": "Philadelphia 76ers",
-      "overall": { "actual": 0.457, "expected": 0.459 },
-      "zones": {
-        "At Rim": { "actual": 0.654, "expected": 0.633, "fga": 2103 },
-        "Mid-Range": { "actual": 0.420, "expected": 0.435, "fga": 867 },
-        "Corner 3": { "actual": 0.362, "expected": 0.355, "fga": 1012 },
-        "Above Break 3": { "actual": 0.342, "expected": 0.356, "fga": 2687 }
-      }
-    },
-    {
-      "name": "Phoenix Suns",
-      "overall": { "actual": 0.453, "expected": 0.456 },
-      "zones": {
-        "At Rim": { "actual": 0.647, "expected": 0.630, "fga": 2034 },
-        "Mid-Range": { "actual": 0.411, "expected": 0.429, "fga": 812 },
-        "Corner 3": { "actual": 0.362, "expected": 0.354, "fga": 1078 },
-        "Above Break 3": { "actual": 0.342, "expected": 0.355, "fga": 2756 }
-      }
-    },
-    {
-      "name": "Toronto Raptors",
-      "overall": { "actual": 0.450, "expected": 0.454 },
-      "zones": {
-        "At Rim": { "actual": 0.641, "expected": 0.627, "fga": 1978 },
-        "Mid-Range": { "actual": 0.405, "expected": 0.427, "fga": 734 },
-        "Corner 3": { "actual": 0.358, "expected": 0.352, "fga": 1023 },
-        "Above Break 3": { "actual": 0.341, "expected": 0.354, "fga": 2678 }
-      }
-    },
-    {
-      "name": "Orlando Magic",
-      "overall": { "actual": 0.447, "expected": 0.452 },
-      "zones": {
-        "At Rim": { "actual": 0.638, "expected": 0.626, "fga": 2012 },
-        "Mid-Range": { "actual": 0.398, "expected": 0.424, "fga": 712 },
-        "Corner 3": { "actual": 0.355, "expected": 0.351, "fga": 1034 },
-        "Above Break 3": { "actual": 0.337, "expected": 0.353, "fga": 2634 }
-      }
-    },
-    {
-      "name": "Atlanta Hawks",
-      "overall": { "actual": 0.455, "expected": 0.461 },
-      "zones": {
-        "At Rim": { "actual": 0.649, "expected": 0.633, "fga": 2143 },
-        "Mid-Range": { "actual": 0.415, "expected": 0.435, "fga": 856 },
-        "Corner 3": { "actual": 0.363, "expected": 0.357, "fga": 1089 },
-        "Above Break 3": { "actual": 0.343, "expected": 0.358, "fga": 2901 }
-      }
-    },
-    {
-      "name": "Houston Rockets",
-      "overall": { "actual": 0.449, "expected": 0.455 },
-      "zones": {
-        "At Rim": { "actual": 0.638, "expected": 0.626, "fga": 2023 },
-        "Mid-Range": { "actual": 0.401, "expected": 0.424, "fga": 723 },
-        "Corner 3": { "actual": 0.355, "expected": 0.351, "fga": 1009 },
-        "Above Break 3": { "actual": 0.340, "expected": 0.354, "fga": 2634 }
-      }
-    },
-    {
-      "name": "Utah Jazz",
-      "overall": { "actual": 0.449, "expected": 0.456 },
-      "zones": {
-        "At Rim": { "actual": 0.637, "expected": 0.626, "fga": 1978 },
-        "Mid-Range": { "actual": 0.406, "expected": 0.428, "fga": 745 },
-        "Corner 3": { "actual": 0.354, "expected": 0.352, "fga": 989 },
-        "Above Break 3": { "actual": 0.339, "expected": 0.354, "fga": 2567 }
-      }
-    },
-    {
-      "name": "Portland Trail Blazers",
-      "overall": { "actual": 0.449, "expected": 0.457 },
-      "zones": {
-        "At Rim": { "actual": 0.636, "expected": 0.625, "fga": 1923 },
-        "Mid-Range": { "actual": 0.403, "expected": 0.426, "fga": 712 },
-        "Corner 3": { "actual": 0.354, "expected": 0.352, "fga": 978 },
-        "Above Break 3": { "actual": 0.340, "expected": 0.356, "fga": 2512 }
-      }
-    },
-    {
-      "name": "Brooklyn Nets",
-      "overall": { "actual": 0.447, "expected": 0.456 },
-      "zones": {
-        "At Rim": { "actual": 0.635, "expected": 0.625, "fga": 1945 },
-        "Mid-Range": { "actual": 0.399, "expected": 0.425, "fga": 698 },
-        "Corner 3": { "actual": 0.351, "expected": 0.351, "fga": 967 },
-        "Above Break 3": { "actual": 0.340, "expected": 0.355, "fga": 2489 }
-      }
-    },
-    {
-      "name": "Chicago Bulls",
-      "overall": { "actual": 0.450, "expected": 0.460 },
-      "zones": {
-        "At Rim": { "actual": 0.641, "expected": 0.630, "fga": 2023 },
-        "Mid-Range": { "actual": 0.409, "expected": 0.431, "fga": 789 },
-        "Corner 3": { "actual": 0.357, "expected": 0.354, "fga": 1023 },
-        "Above Break 3": { "actual": 0.341, "expected": 0.358, "fga": 2712 }
-      }
-    },
-    {
-      "name": "San Antonio Spurs",
-      "overall": { "actual": 0.442, "expected": 0.453 },
-      "zones": {
-        "At Rim": { "actual": 0.628, "expected": 0.620, "fga": 1867 },
-        "Mid-Range": { "actual": 0.395, "expected": 0.421, "fga": 678 },
-        "Corner 3": { "actual": 0.348, "expected": 0.348, "fga": 923 },
-        "Above Break 3": { "actual": 0.337, "expected": 0.352, "fga": 2456 }
-      }
-    },
-    {
-      "name": "Washington Wizards",
-      "overall": { "actual": 0.443, "expected": 0.455 },
-      "zones": {
-        "At Rim": { "actual": 0.630, "expected": 0.622, "fga": 1923 },
-        "Mid-Range": { "actual": 0.397, "expected": 0.422, "fga": 689 },
-        "Corner 3": { "actual": 0.349, "expected": 0.349, "fga": 934 },
-        "Above Break 3": { "actual": 0.337, "expected": 0.354, "fga": 2489 }
-      }
-    },
-    {
-      "name": "Charlotte Hornets",
-      "overall": { "actual": 0.444, "expected": 0.457 },
-      "zones": {
-        "At Rim": { "actual": 0.631, "expected": 0.623, "fga": 1934 },
-        "Mid-Range": { "actual": 0.398, "expected": 0.424, "fga": 701 },
-        "Corner 3": { "actual": 0.351, "expected": 0.350, "fga": 945 },
-        "Above Break 3": { "actual": 0.338, "expected": 0.355, "fga": 2512 }
-      }
-    },
-    {
-      "name": "Detroit Pistons",
-      "overall": { "actual": 0.437, "expected": 0.452 },
-      "zones": {
-        "At Rim": { "actual": 0.622, "expected": 0.618, "fga": 1812 },
-        "Mid-Range": { "actual": 0.389, "expected": 0.418, "fga": 654 },
-        "Corner 3": { "actual": 0.343, "expected": 0.346, "fga": 889 },
-        "Above Break 3": { "actual": 0.334, "expected": 0.351, "fga": 2398 }
-      }
-    }
-  ],
-  "season": "2023-24",
+    ]
+  },
   "generated": "2026-05-11"
 }

@@ -15,18 +15,27 @@ export interface TeamData {
   }
 }
 
-export interface TeamStats {
+interface SeasonData {
   teams: TeamData[]
-  season: string
+}
+
+interface TeamStats {
+  seasons: Record<string, SeasonData>
   generated: string
 }
 
 import rawData from '@/data/team_stats.json'
 
-export function getTeams(): TeamData[] {
-  return (rawData as TeamStats).teams
+const data = rawData as TeamStats
+
+export function getSeasons(): string[] {
+  return Object.keys(data.seasons).sort().reverse()
 }
 
-export function getSeason(): string {
-  return (rawData as TeamStats).season
+export function getTeamsBySeason(season: string): TeamData[] {
+  return data.seasons[season]?.teams ?? []
+}
+
+export function getLatestSeason(): string {
+  return getSeasons()[0]
 }

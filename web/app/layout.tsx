@@ -1,18 +1,39 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Bebas_Neue, Barlow_Condensed, DM_Mono } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--inter' })
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+})
+
+const barlowCondensed = Barlow_Condensed({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
+const dmMono = DM_Mono({
+  weight: ['400', '500'],
+  subsets: ['latin'],
+  variable: '--font-mono',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: 'NBA Shot Quality Model',
-  description: 'Interactive NBA shot make probability predictor and team dashboard',
+  title: 'Swish Index — NBA Shot Quality',
+  description: 'Live NBA shot make probability predictor and team shooting analytics',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.variable}>{children}</body>
+      <body className={`${bebasNeue.variable} ${barlowCondensed.variable} ${dmMono.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
