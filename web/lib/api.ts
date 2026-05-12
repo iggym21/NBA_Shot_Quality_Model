@@ -1,6 +1,11 @@
-import type { ShotParams } from '@/components/predictor/SliderGrid'
-
-export type { ShotParams }
+export interface ShotParams {
+  shot_distance: number
+  shot_angle: number
+  defender_distance: number
+  seconds_in_period: number
+  quarter: number
+  score_differential: number
+}
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000'
 

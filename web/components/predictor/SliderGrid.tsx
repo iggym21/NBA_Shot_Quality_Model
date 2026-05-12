@@ -1,13 +1,8 @@
 'use client'
 
-export interface ShotParams {
-  shot_distance: number
-  shot_angle: number
-  defender_distance: number
-  seconds_in_period: number
-  quarter: number
-  score_differential: number
-}
+import type { ShotParams } from '@/lib/api'
+
+export type { ShotParams }
 
 interface SliderConfig {
   key: keyof ShotParams

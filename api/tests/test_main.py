@@ -49,6 +49,12 @@ def test_predict_rejects_missing_fields(client):
     assert response.status_code == 422
 
 
+def test_predict_503_when_model_not_loaded(client, monkeypatch):
+    monkeypatch.setattr(main_module, "model", None)
+    response = client.post("/predict", json=VALID_PAYLOAD)
+    assert response.status_code == 503
+
+
 def test_health_returns_ok(client):
     response = client.get("/health")
     assert response.status_code == 200

@@ -2,10 +2,9 @@
 
 import { useState } from 'react'
 import TabNav from '@/components/TabNav'
+import type { Tab } from '@/components/TabNav'
 import ShotPredictor from '@/components/predictor/ShotPredictor'
 import TeamDashboard from '@/components/dashboard/TeamDashboard'
-
-type Tab = 'predictor' | 'dashboard'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>('predictor')

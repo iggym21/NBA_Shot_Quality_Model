@@ -1,6 +1,6 @@
 'use client'
 
-type Tab = 'predictor' | 'dashboard'
+export type Tab = 'predictor' | 'dashboard'
 
 interface TabNavProps {
   activeTab: Tab
